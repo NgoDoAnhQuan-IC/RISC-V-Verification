@@ -1,0 +1,1305 @@
+COVERGROUP COVERAGE:
+-----------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal    Status               
+                                                                                              
+-----------------------------------------------------------------------------------------------
+ TYPE /tb_top/unit_fixture/decoder_cg               100.0000%        100    Covered              
+    covered/total bins:                                    12         12                      
+    missing/total bins:                                     0         12                      
+    % Hit:                                          100.0000%        100                      
+    Coverpoint decoder_cg::cp_opcode                100.0000%        100    Covered              
+        covered/total bins:                                 1          1                      
+        missing/total bins:                                 0          1                      
+        % Hit:                                      100.0000%        100                      
+    Coverpoint decoder_cg::cp_funct3                100.0000%        100    Covered              
+        covered/total bins:                                 8          8                      
+        missing/total bins:                                 0          8                      
+        % Hit:                                      100.0000%        100                      
+    Coverpoint decoder_cg::cp_funct7                100.0000%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                      100.0000%        100                      
+ Covergroup instance \/tb_top/unit_fixture/decoder_coverage  
+                                                    100.0000%        100    Covered              
+    covered/total bins:                                    12         12                      
+    missing/total bins:                                     0         12                      
+    % Hit:                                          100.0000%        100                      
+    Coverpoint cp_opcode                            100.0000%        100    Covered              
+        covered/total bins:                                 1          1                      
+        missing/total bins:                                 0          1                      
+        % Hit:                                      100.0000%        100                      
+        bin r_type                                         15          1    Covered              
+    Coverpoint cp_funct3                            100.0000%        100    Covered              
+        covered/total bins:                                 8          8                      
+        missing/total bins:                                 0          8                      
+        % Hit:                                      100.0000%        100                      
+        bin values[0]                                       6          1    Covered              
+        bin values[1]                                       2          1    Covered              
+        bin values[2]                                       1          1    Covered              
+        bin values[3]                                       1          1    Covered              
+        bin values[4]                                       1          1    Covered              
+        bin values[5]                                       2          1    Covered              
+        bin values[6]                                       1          1    Covered              
+        bin values[7]                                       1          1    Covered              
+    Coverpoint cp_funct7                            100.0000%        100    Covered              
+        covered/total bins:                                 3          3                      
+        missing/total bins:                                 0          3                      
+        % Hit:                                      100.0000%        100                      
+        bin base                                           10          1    Covered              
+        bin subtract                                        2          1    Covered              
+        bin multiply                                        2          1    Covered              
+ TYPE /tb_top/unit_fixture/fetch_cg                 100.0000%        100    Covered              
+    covered/total bins:                                     9          9                      
+    missing/total bins:                                     0          9                      
+    % Hit:                                          100.0000%        100                      
+    Coverpoint fetch_cg::cp_pc_seq                  100.0000%        100    Covered              
+        covered/total bins:                                 9          9                      
+        missing/total bins:                                 0          9                      
+        % Hit:                                      100.0000%        100                      
+ Covergroup instance \/tb_top/unit_fixture/fetch_coverage  
+                                                    100.0000%        100    Covered              
+    covered/total bins:                                     9          9                      
+    missing/total bins:                                     0          9                      
+    % Hit:                                          100.0000%        100                      
+    Coverpoint cp_pc_seq                            100.0000%        100    Covered              
+        covered/total bins:                                 9          9                      
+        missing/total bins:                                 0          9                      
+        % Hit:                                      100.0000%        100                      
+        bin rom[0]                                          6          1    Covered              
+        bin rom[4]                                          4          1    Covered              
+        bin rom[8]                                          4          1    Covered              
+        bin rom[12]                                         4          1    Covered              
+        bin rom[16]                                         4          1    Covered              
+        bin rom[20]                                         4          1    Covered              
+        bin rom[24]                                         4          1    Covered              
+        bin rom[28]                                         3          1    Covered              
+        bin out_of_bounds                                   3          1    Covered              
+ TYPE /riscv_tb_pkg/riscv_coverage/instr_cg         100.0000%        100    Covered              
+    covered/total bins:                                   393        393                      
+    missing/total bins:                                     0        393                      
+    % Hit:                                          100.0000%        100                      
+    Coverpoint instr_cg::cp_instr                   100.0000%        100    Covered              
+        covered/total bins:                                 9          9                      
+        missing/total bins:                                 0          9                      
+        % Hit:                                      100.0000%        100                      
+        bin instructions[ADD]                             654          1    Covered              
+        bin instructions[SUB]                            1972          1    Covered              
+        bin instructions[MUL]                            1951          1    Covered              
+        bin instructions[SLL]                             976          1    Covered              
+        bin instructions[SRL]                             950          1    Covered              
+        bin instructions[XOR]                             975          1    Covered              
+        bin instructions[OR]                              990          1    Covered              
+        bin instructions[AND]                            1062          1    Covered              
+        bin instructions[SLT]                             980          1    Covered              
+    Coverpoint instr_cg::cp_rd                      100.0000%        100    Covered              
+        covered/total bins:                                32         32                      
+        missing/total bins:                                 0         32                      
+        % Hit:                                      100.0000%        100                      
+        bin regs[0]                                       283          1    Covered              
+        bin regs[1]                                       335          1    Covered              
+        bin regs[2]                                       316          1    Covered              
+        bin regs[3]                                       338          1    Covered              
+        bin regs[4]                                       337          1    Covered              
+        bin regs[5]                                       323          1    Covered              
+        bin regs[6]                                       315          1    Covered              
+        bin regs[7]                                       390          1    Covered              
+        bin regs[8]                                       325          1    Covered              
+        bin regs[9]                                       334          1    Covered              
+        bin regs[10]                                      327          1    Covered              
+        bin regs[11]                                      347          1    Covered              
+        bin regs[12]                                      321          1    Covered              
+        bin regs[13]                                      319          1    Covered              
+        bin regs[14]                                      344          1    Covered              
+        bin regs[15]                                      310          1    Covered              
+        bin regs[16]                                      321          1    Covered              
+        bin regs[17]                                      313          1    Covered              
+        bin regs[18]                                      302          1    Covered              
+        bin regs[19]                                      332          1    Covered              
+        bin regs[20]                                      345          1    Covered              
+        bin regs[21]                                      348          1    Covered              
+        bin regs[22]                                      295          1    Covered              
+        bin regs[23]                                      319          1    Covered              
+        bin regs[24]                                      308          1    Covered              
+        bin regs[25]                                      343          1    Covered              
+        bin regs[26]                                      327          1    Covered              
+        bin regs[27]                                      316          1    Covered              
+        bin regs[28]                                      339          1    Covered              
+        bin regs[29]                                      332          1    Covered              
+        bin regs[30]                                      337          1    Covered              
+        bin regs[31]                                      369          1    Covered              
+    Coverpoint instr_cg::cp_rs1                     100.0000%        100    Covered              
+        covered/total bins:                                32         32                      
+        missing/total bins:                                 0         32                      
+        % Hit:                                      100.0000%        100                      
+        bin regs[0]                                       363          1    Covered              
+        bin regs[1]                                       360          1    Covered              
+        bin regs[2]                                       313          1    Covered              
+        bin regs[3]                                       328          1    Covered              
+        bin regs[4]                                       342          1    Covered              
+        bin regs[5]                                       344          1    Covered              
+        bin regs[6]                                       306          1    Covered              
+        bin regs[7]                                       292          1    Covered              
+        bin regs[8]                                       331          1    Covered              
+        bin regs[9]                                       349          1    Covered              
+        bin regs[10]                                      330          1    Covered              
+        bin regs[11]                                      337          1    Covered              
+        bin regs[12]                                      310          1    Covered              
+        bin regs[13]                                      307          1    Covered              
+        bin regs[14]                                      320          1    Covered              
+        bin regs[15]                                      315          1    Covered              
+        bin regs[16]                                      323          1    Covered              
+        bin regs[17]                                      329          1    Covered              
+        bin regs[18]                                      335          1    Covered              
+        bin regs[19]                                      345          1    Covered              
+        bin regs[20]                                      323          1    Covered              
+        bin regs[21]                                      328          1    Covered              
+        bin regs[22]                                      333          1    Covered              
+        bin regs[23]                                      341          1    Covered              
+        bin regs[24]                                      306          1    Covered              
+        bin regs[25]                                      325          1    Covered              
+        bin regs[26]                                      353          1    Covered              
+        bin regs[27]                                      312          1    Covered              
+        bin regs[28]                                      321          1    Covered              
+        bin regs[29]                                      317          1    Covered              
+        bin regs[30]                                      336          1    Covered              
+        bin regs[31]                                      336          1    Covered              
+    Coverpoint instr_cg::cp_rs2                     100.0000%        100    Covered              
+        covered/total bins:                                32         32                      
+        missing/total bins:                                 0         32                      
+        % Hit:                                      100.0000%        100                      
+        bin regs[0]                                       322          1    Covered              
+        bin regs[1]                                       374          1    Covered              
+        bin regs[2]                                       392          1    Covered              
+        bin regs[3]                                       320          1    Covered              
+        bin regs[4]                                       339          1    Covered              
+        bin regs[5]                                       323          1    Covered              
+        bin regs[6]                                       360          1    Covered              
+        bin regs[7]                                       329          1    Covered              
+        bin regs[8]                                       319          1    Covered              
+        bin regs[9]                                       304          1    Covered              
+        bin regs[10]                                      311          1    Covered              
+        bin regs[11]                                      330          1    Covered              
+        bin regs[12]                                      322          1    Covered              
+        bin regs[13]                                      317          1    Covered              
+        bin regs[14]                                      304          1    Covered              
+        bin regs[15]                                      327          1    Covered              
+        bin regs[16]                                      337          1    Covered              
+        bin regs[17]                                      320          1    Covered              
+        bin regs[18]                                      304          1    Covered              
+        bin regs[19]                                      288          1    Covered              
+        bin regs[20]                                      304          1    Covered              
+        bin regs[21]                                      373          1    Covered              
+        bin regs[22]                                      343          1    Covered              
+        bin regs[23]                                      330          1    Covered              
+        bin regs[24]                                      326          1    Covered              
+        bin regs[25]                                      306          1    Covered              
+        bin regs[26]                                      360          1    Covered              
+        bin regs[27]                                      338          1    Covered              
+        bin regs[28]                                      315          1    Covered              
+        bin regs[29]                                      303          1    Covered              
+        bin regs[30]                                      355          1    Covered              
+        bin regs[31]                                      315          1    Covered              
+    Cross instr_cg::op_x_rd                         100.0000%        100    Covered              
+        covered/total bins:                               288        288                      
+        missing/total bins:                                 0        288                      
+        % Hit:                                      100.0000%        100                      
+        bin <instructions[ADD],regs[6]>                    23          1    Covered              
+        bin <instructions[MUL],regs[5]>                    69          1    Covered              
+        bin <instructions[SUB],regs[7]>                    67          1    Covered              
+        bin <instructions[OR],regs[17]>                    33          1    Covered              
+        bin <instructions[XOR],regs[28]>                   44          1    Covered              
+        bin <instructions[SLL],regs[29]>                   33          1    Covered              
+        bin <instructions[SRL],regs[30]>                   31          1    Covered              
+        bin <instructions[AND],regs[31]>                   47          1    Covered              
+        bin <instructions[ADD],regs[5]>                    21          1    Covered              
+        bin <instructions[SUB],regs[6]>                    63          1    Covered              
+        bin <instructions[OR],regs[7]>                     32          1    Covered              
+        bin <instructions[ADD],regs[8]>                    21          1    Covered              
+        bin <instructions[ADD],regs[0]>                    12          1    Covered              
+        bin <instructions[SUB],regs[0]>                    41          1    Covered              
+        bin <instructions[MUL],regs[0]>                    58          1    Covered              
+        bin <instructions[SLL],regs[0]>                    33          1    Covered              
+        bin <instructions[SRL],regs[0]>                    29          1    Covered              
+        bin <instructions[XOR],regs[0]>                    21          1    Covered              
+        bin <instructions[OR],regs[0]>                     18          1    Covered              
+        bin <instructions[AND],regs[0]>                    35          1    Covered              
+        bin <instructions[SLT],regs[0]>                    36          1    Covered              
+        bin <instructions[ADD],regs[1]>                    20          1    Covered              
+        bin <instructions[SUB],regs[1]>                    65          1    Covered              
+        bin <instructions[MUL],regs[1]>                    64          1    Covered              
+        bin <instructions[SLL],regs[1]>                    41          1    Covered              
+        bin <instructions[SRL],regs[1]>                    34          1    Covered              
+        bin <instructions[OR],regs[1]>                     27          1    Covered              
+        bin <instructions[AND],regs[1]>                    34          1    Covered              
+        bin <instructions[SLT],regs[1]>                    27          1    Covered              
+        bin <instructions[SUB],regs[2]>                    75          1    Covered              
+        bin <instructions[MUL],regs[2]>                    49          1    Covered              
+        bin <instructions[SLL],regs[2]>                    34          1    Covered              
+        bin <instructions[SRL],regs[2]>                    23          1    Covered              
+        bin <instructions[XOR],regs[2]>                    24          1    Covered              
+        bin <instructions[OR],regs[2]>                     36          1    Covered              
+        bin <instructions[AND],regs[2]>                    38          1    Covered              
+        bin <instructions[SLT],regs[2]>                    28          1    Covered              
+        bin <instructions[ADD],regs[3]>                    17          1    Covered              
+        bin <instructions[SUB],regs[3]>                    65          1    Covered              
+        bin <instructions[MUL],regs[3]>                    47          1    Covered              
+        bin <instructions[SLL],regs[3]>                    46          1    Covered              
+        bin <instructions[SRL],regs[3]>                    33          1    Covered              
+        bin <instructions[XOR],regs[3]>                    30          1    Covered              
+        bin <instructions[OR],regs[3]>                     25          1    Covered              
+        bin <instructions[AND],regs[3]>                    36          1    Covered              
+        bin <instructions[SLT],regs[3]>                    39          1    Covered              
+        bin <instructions[ADD],regs[4]>                    24          1    Covered              
+        bin <instructions[SUB],regs[4]>                    64          1    Covered              
+        bin <instructions[MUL],regs[4]>                    52          1    Covered              
+        bin <instructions[SLL],regs[4]>                    36          1    Covered              
+        bin <instructions[SRL],regs[4]>                    29          1    Covered              
+        bin <instructions[XOR],regs[4]>                    27          1    Covered              
+        bin <instructions[OR],regs[4]>                     38          1    Covered              
+        bin <instructions[AND],regs[4]>                    35          1    Covered              
+        bin <instructions[SLT],regs[4]>                    32          1    Covered              
+        bin <instructions[SUB],regs[5]>                    65          1    Covered              
+        bin <instructions[SLL],regs[5]>                    22          1    Covered              
+        bin <instructions[SRL],regs[5]>                    32          1    Covered              
+        bin <instructions[XOR],regs[5]>                    32          1    Covered              
+        bin <instructions[OR],regs[5]>                     30          1    Covered              
+        bin <instructions[AND],regs[5]>                    22          1    Covered              
+        bin <instructions[SLT],regs[5]>                    30          1    Covered              
+        bin <instructions[MUL],regs[6]>                    59          1    Covered              
+        bin <instructions[SLL],regs[6]>                    27          1    Covered              
+        bin <instructions[SRL],regs[6]>                    21          1    Covered              
+        bin <instructions[XOR],regs[6]>                    28          1    Covered              
+        bin <instructions[OR],regs[6]>                     17          1    Covered              
+        bin <instructions[AND],regs[6]>                    42          1    Covered              
+        bin <instructions[SLT],regs[6]>                    35          1    Covered              
+        bin <instructions[ADD],regs[7]>                    58          1    Covered              
+        bin <instructions[MUL],regs[7]>                    64          1    Covered              
+        bin <instructions[SLL],regs[7]>                    40          1    Covered              
+        bin <instructions[SRL],regs[7]>                    34          1    Covered              
+        bin <instructions[XOR],regs[7]>                    34          1    Covered              
+        bin <instructions[AND],regs[7]>                    30          1    Covered              
+        bin <instructions[SLT],regs[7]>                    31          1    Covered              
+        bin <instructions[SUB],regs[8]>                    70          1    Covered              
+        bin <instructions[MUL],regs[8]>                    68          1    Covered              
+        bin <instructions[SLL],regs[8]>                    26          1    Covered              
+        bin <instructions[SRL],regs[8]>                    20          1    Covered              
+        bin <instructions[XOR],regs[8]>                    32          1    Covered              
+        bin <instructions[OR],regs[8]>                     31          1    Covered              
+        bin <instructions[AND],regs[8]>                    34          1    Covered              
+        bin <instructions[SLT],regs[8]>                    23          1    Covered              
+        bin <instructions[ADD],regs[9]>                    20          1    Covered              
+        bin <instructions[SUB],regs[9]>                    62          1    Covered              
+        bin <instructions[MUL],regs[9]>                    69          1    Covered              
+        bin <instructions[SLL],regs[9]>                    28          1    Covered              
+        bin <instructions[SRL],regs[9]>                    34          1    Covered              
+        bin <instructions[XOR],regs[9]>                    24          1    Covered              
+        bin <instructions[OR],regs[9]>                     36          1    Covered              
+        bin <instructions[AND],regs[9]>                    39          1    Covered              
+        bin <instructions[SLT],regs[9]>                    22          1    Covered              
+        bin <instructions[ADD],regs[10]>                   21          1    Covered              
+        bin <instructions[SUB],regs[10]>                   52          1    Covered              
+        bin <instructions[MUL],regs[10]>                   57          1    Covered              
+        bin <instructions[SLL],regs[10]>                   27          1    Covered              
+        bin <instructions[SRL],regs[10]>                   31          1    Covered              
+        bin <instructions[OR],regs[10]>                    38          1    Covered              
+        bin <instructions[AND],regs[10]>                   34          1    Covered              
+        bin <instructions[SLT],regs[10]>                   39          1    Covered              
+        bin <instructions[ADD],regs[11]>                   26          1    Covered              
+        bin <instructions[SUB],regs[11]>                   74          1    Covered              
+        bin <instructions[MUL],regs[11]>                   68          1    Covered              
+        bin <instructions[SLL],regs[11]>                   33          1    Covered              
+        bin <instructions[SRL],regs[11]>                   30          1    Covered              
+        bin <instructions[XOR],regs[11]>                   32          1    Covered              
+        bin <instructions[OR],regs[11]>                    27          1    Covered              
+        bin <instructions[AND],regs[11]>                   24          1    Covered              
+        bin <instructions[SLT],regs[11]>                   33          1    Covered              
+        bin <instructions[ADD],regs[12]>                   23          1    Covered              
+        bin <instructions[SUB],regs[12]>                   63          1    Covered              
+        bin <instructions[MUL],regs[12]>                   57          1    Covered              
+        bin <instructions[SLL],regs[12]>                   25          1    Covered              
+        bin <instructions[SRL],regs[12]>                   28          1    Covered              
+        bin <instructions[XOR],regs[12]>                   36          1    Covered              
+        bin <instructions[OR],regs[12]>                    27          1    Covered              
+        bin <instructions[AND],regs[12]>                   22          1    Covered              
+        bin <instructions[SLT],regs[12]>                   40          1    Covered              
+        bin <instructions[ADD],regs[13]>                   19          1    Covered              
+        bin <instructions[SUB],regs[13]>                   62          1    Covered              
+        bin <instructions[MUL],regs[13]>                   55          1    Covered              
+        bin <instructions[SLL],regs[13]>                   32          1    Covered              
+        bin <instructions[SRL],regs[13]>                   43          1    Covered              
+        bin <instructions[XOR],regs[13]>                   20          1    Covered              
+        bin <instructions[OR],regs[13]>                    34          1    Covered              
+        bin <instructions[SLT],regs[13]>                   28          1    Covered              
+        bin <instructions[ADD],regs[14]>                   28          1    Covered              
+        bin <instructions[SUB],regs[14]>                   54          1    Covered              
+        bin <instructions[MUL],regs[14]>                   62          1    Covered              
+        bin <instructions[SLL],regs[14]>                   26          1    Covered              
+        bin <instructions[SRL],regs[14]>                   36          1    Covered              
+        bin <instructions[XOR],regs[14]>                   31          1    Covered              
+        bin <instructions[OR],regs[14]>                    34          1    Covered              
+        bin <instructions[AND],regs[14]>                   42          1    Covered              
+        bin <instructions[SLT],regs[14]>                   31          1    Covered              
+        bin <instructions[ADD],regs[15]>                   22          1    Covered              
+        bin <instructions[SUB],regs[15]>                   62          1    Covered              
+        bin <instructions[MUL],regs[15]>                   67          1    Covered              
+        bin <instructions[SLL],regs[15]>                   19          1    Covered              
+        bin <instructions[SRL],regs[15]>                   29          1    Covered              
+        bin <instructions[XOR],regs[15]>                   29          1    Covered              
+        bin <instructions[OR],regs[15]>                    31          1    Covered              
+        bin <instructions[AND],regs[15]>                   21          1    Covered              
+        bin <instructions[SLT],regs[15]>                   30          1    Covered              
+        bin <instructions[SUB],regs[16]>                   66          1    Covered              
+        bin <instructions[MUL],regs[16]>                   50          1    Covered              
+        bin <instructions[SLL],regs[16]>                   25          1    Covered              
+        bin <instructions[SRL],regs[16]>                   32          1    Covered              
+        bin <instructions[XOR],regs[16]>                   29          1    Covered              
+        bin <instructions[OR],regs[16]>                    23          1    Covered              
+        bin <instructions[AND],regs[16]>                   46          1    Covered              
+        bin <instructions[SLT],regs[16]>                   30          1    Covered              
+        bin <instructions[ADD],regs[17]>                   21          1    Covered              
+        bin <instructions[SUB],regs[17]>                   62          1    Covered              
+        bin <instructions[MUL],regs[17]>                   60          1    Covered              
+        bin <instructions[SLL],regs[17]>                   22          1    Covered              
+        bin <instructions[SRL],regs[17]>                   28          1    Covered              
+        bin <instructions[XOR],regs[17]>                   27          1    Covered              
+        bin <instructions[AND],regs[17]>                   34          1    Covered              
+        bin <instructions[SLT],regs[17]>                   26          1    Covered              
+        bin <instructions[ADD],regs[18]>                   17          1    Covered              
+        bin <instructions[SUB],regs[18]>                   54          1    Covered              
+        bin <instructions[MUL],regs[18]>                   65          1    Covered              
+        bin <instructions[SLL],regs[18]>                   29          1    Covered              
+        bin <instructions[SRL],regs[18]>                   28          1    Covered              
+        bin <instructions[XOR],regs[18]>                   19          1    Covered              
+        bin <instructions[OR],regs[18]>                    32          1    Covered              
+        bin <instructions[AND],regs[18]>                   36          1    Covered              
+        bin <instructions[SLT],regs[18]>                   22          1    Covered              
+        bin <instructions[ADD],regs[19]>                   18          1    Covered              
+        bin <instructions[SUB],regs[19]>                   58          1    Covered              
+        bin <instructions[MUL],regs[19]>                   65          1    Covered              
+        bin <instructions[SLL],regs[19]>                   30          1    Covered              
+        bin <instructions[SRL],regs[19]>                   24          1    Covered              
+        bin <instructions[XOR],regs[19]>                   42          1    Covered              
+        bin <instructions[OR],regs[19]>                    35          1    Covered              
+        bin <instructions[AND],regs[19]>                   32          1    Covered              
+        bin <instructions[SLT],regs[19]>                   28          1    Covered              
+        bin <instructions[ADD],regs[20]>                   16          1    Covered              
+        bin <instructions[SUB],regs[20]>                   59          1    Covered              
+        bin <instructions[MUL],regs[20]>                   67          1    Covered              
+        bin <instructions[SLL],regs[20]>                   36          1    Covered              
+        bin <instructions[SRL],regs[20]>                   46          1    Covered              
+        bin <instructions[XOR],regs[20]>                   15          1    Covered              
+        bin <instructions[OR],regs[20]>                    32          1    Covered              
+        bin <instructions[AND],regs[20]>                   40          1    Covered              
+        bin <instructions[SLT],regs[20]>                   34          1    Covered              
+        bin <instructions[ADD],regs[21]>                   22          1    Covered              
+        bin <instructions[SUB],regs[21]>                   57          1    Covered              
+        bin <instructions[MUL],regs[21]>                   76          1    Covered              
+        bin <instructions[SLL],regs[21]>                   38          1    Covered              
+        bin <instructions[SRL],regs[21]>                   21          1    Covered              
+        bin <instructions[XOR],regs[21]>                   29          1    Covered              
+        bin <instructions[OR],regs[21]>                    29          1    Covered              
+        bin <instructions[AND],regs[21]>                   33          1    Covered              
+        bin <instructions[SLT],regs[21]>                   43          1    Covered              
+        bin <instructions[ADD],regs[22]>                   17          1    Covered              
+        bin <instructions[SUB],regs[22]>                   45          1    Covered              
+        bin <instructions[MUL],regs[22]>                   65          1    Covered              
+        bin <instructions[SRL],regs[22]>                   25          1    Covered              
+        bin <instructions[OR],regs[22]>                    25          1    Covered              
+        bin <instructions[AND],regs[22]>                   30          1    Covered              
+        bin <instructions[SLT],regs[22]>                   29          1    Covered              
+        bin <instructions[SUB],regs[23]>                   50          1    Covered              
+        bin <instructions[MUL],regs[23]>                   65          1    Covered              
+        bin <instructions[SLL],regs[23]>                   25          1    Covered              
+        bin <instructions[SRL],regs[23]>                   27          1    Covered              
+        bin <instructions[XOR],regs[23]>                   33          1    Covered              
+        bin <instructions[OR],regs[23]>                    34          1    Covered              
+        bin <instructions[AND],regs[23]>                   28          1    Covered              
+        bin <instructions[SLT],regs[23]>                   36          1    Covered              
+        bin <instructions[ADD],regs[24]>                   16          1    Covered              
+        bin <instructions[SUB],regs[24]>                   44          1    Covered              
+        bin <instructions[MUL],regs[24]>                   60          1    Covered              
+        bin <instructions[SLL],regs[24]>                   28          1    Covered              
+        bin <instructions[SRL],regs[24]>                   29          1    Covered              
+        bin <instructions[XOR],regs[24]>                   34          1    Covered              
+        bin <instructions[OR],regs[24]>                    40          1    Covered              
+        bin <instructions[AND],regs[24]>                   22          1    Covered              
+        bin <instructions[SLT],regs[24]>                   35          1    Covered              
+        bin <instructions[ADD],regs[25]>                   21          1    Covered              
+        bin <instructions[SUB],regs[25]>                   79          1    Covered              
+        bin <instructions[MUL],regs[25]>                   58          1    Covered              
+        bin <instructions[SLL],regs[25]>                   35          1    Covered              
+        bin <instructions[SRL],regs[25]>                   27          1    Covered              
+        bin <instructions[XOR],regs[25]>                   29          1    Covered              
+        bin <instructions[OR],regs[25]>                    32          1    Covered              
+        bin <instructions[AND],regs[25]>                   29          1    Covered              
+        bin <instructions[SLT],regs[25]>                   33          1    Covered              
+        bin <instructions[ADD],regs[26]>                   16          1    Covered              
+        bin <instructions[SUB],regs[26]>                   59          1    Covered              
+        bin <instructions[MUL],regs[26]>                   66          1    Covered              
+        bin <instructions[SLL],regs[26]>                   35          1    Covered              
+        bin <instructions[SRL],regs[26]>                   30          1    Covered              
+        bin <instructions[XOR],regs[26]>                   33          1    Covered              
+        bin <instructions[OR],regs[26]>                    33          1    Covered              
+        bin <instructions[AND],regs[26]>                   31          1    Covered              
+        bin <instructions[SLT],regs[26]>                   24          1    Covered              
+        bin <instructions[ADD],regs[27]>                   21          1    Covered              
+        bin <instructions[SUB],regs[27]>                   60          1    Covered              
+        bin <instructions[MUL],regs[27]>                   48          1    Covered              
+        bin <instructions[SLL],regs[27]>                   27          1    Covered              
+        bin <instructions[SRL],regs[27]>                   22          1    Covered              
+        bin <instructions[XOR],regs[27]>                   36          1    Covered              
+        bin <instructions[OR],regs[27]>                    38          1    Covered              
+        bin <instructions[AND],regs[27]>                   44          1    Covered              
+        bin <instructions[SLT],regs[27]>                   20          1    Covered              
+        bin <instructions[ADD],regs[28]>                   22          1    Covered              
+        bin <instructions[SUB],regs[28]>                   67          1    Covered              
+        bin <instructions[MUL],regs[28]>                   59          1    Covered              
+        bin <instructions[SLL],regs[28]>                   30          1    Covered              
+        bin <instructions[SRL],regs[28]>                   35          1    Covered              
+        bin <instructions[OR],regs[28]>                    32          1    Covered              
+        bin <instructions[AND],regs[28]>                   26          1    Covered              
+        bin <instructions[SLT],regs[28]>                   24          1    Covered              
+        bin <instructions[SUB],regs[29]>                   67          1    Covered              
+        bin <instructions[MUL],regs[29]>                   51          1    Covered              
+        bin <instructions[SRL],regs[29]>                   36          1    Covered              
+        bin <instructions[XOR],regs[29]>                   33          1    Covered              
+        bin <instructions[OR],regs[29]>                    29          1    Covered              
+        bin <instructions[AND],regs[29]>                   37          1    Covered              
+        bin <instructions[SLT],regs[29]>                   30          1    Covered              
+        bin <instructions[SUB],regs[30]>                   67          1    Covered              
+        bin <instructions[MUL],regs[30]>                   68          1    Covered              
+        bin <instructions[SLL],regs[30]>                   33          1    Covered              
+        bin <instructions[XOR],regs[30]>                   39          1    Covered              
+        bin <instructions[OR],regs[30]>                    24          1    Covered              
+        bin <instructions[AND],regs[30]>                   33          1    Covered              
+        bin <instructions[SLT],regs[30]>                   31          1    Covered              
+        bin <instructions[ADD],regs[31]>                   15          1    Covered              
+        bin <instructions[SUB],regs[31]>                   74          1    Covered              
+        bin <instructions[MUL],regs[31]>                   63          1    Covered              
+        bin <instructions[SLL],regs[31]>                   30          1    Covered              
+        bin <instructions[SRL],regs[31]>                   23          1    Covered              
+        bin <instructions[XOR],regs[31]>                   48          1    Covered              
+        bin <instructions[OR],regs[31]>                    38          1    Covered              
+        bin <instructions[SLT],regs[31]>                   31          1    Covered              
+        bin <instructions[XOR],regs[1]>                    23          1    Covered              
+        bin <instructions[ADD],regs[2]>                     9          1    Covered              
+        bin <instructions[XOR],regs[10]>                   28          1    Covered              
+        bin <instructions[AND],regs[13]>                   26          1    Covered              
+        bin <instructions[ADD],regs[16]>                   20          1    Covered              
+        bin <instructions[SLL],regs[22]>                   25          1    Covered              
+        bin <instructions[XOR],regs[22]>                   34          1    Covered              
+        bin <instructions[ADD],regs[23]>                   21          1    Covered              
+        bin <instructions[ADD],regs[29]>                   16          1    Covered              
+        bin <instructions[ADD],regs[30]>                   11          1    Covered              
+ Covergroup instance \/riscv_tb_pkg::riscv_coverage::instr_cg  
+                                                    100.0000%        100    Covered              
+    covered/total bins:                                   393        393                      
+    missing/total bins:                                     0        393                      
+    % Hit:                                          100.0000%        100                      
+    Coverpoint cp_instr                             100.0000%        100    Covered              
+        covered/total bins:                                 9          9                      
+        missing/total bins:                                 0          9                      
+        % Hit:                                      100.0000%        100                      
+        bin instructions[ADD]                             654          1    Covered              
+        bin instructions[SUB]                            1972          1    Covered              
+        bin instructions[MUL]                            1951          1    Covered              
+        bin instructions[SLL]                             976          1    Covered              
+        bin instructions[SRL]                             950          1    Covered              
+        bin instructions[XOR]                             975          1    Covered              
+        bin instructions[OR]                              990          1    Covered              
+        bin instructions[AND]                            1062          1    Covered              
+        bin instructions[SLT]                             980          1    Covered              
+    Coverpoint cp_rd                                100.0000%        100    Covered              
+        covered/total bins:                                32         32                      
+        missing/total bins:                                 0         32                      
+        % Hit:                                      100.0000%        100                      
+        bin regs[0]                                       283          1    Covered              
+        bin regs[1]                                       335          1    Covered              
+        bin regs[2]                                       316          1    Covered              
+        bin regs[3]                                       338          1    Covered              
+        bin regs[4]                                       337          1    Covered              
+        bin regs[5]                                       323          1    Covered              
+        bin regs[6]                                       315          1    Covered              
+        bin regs[7]                                       390          1    Covered              
+        bin regs[8]                                       325          1    Covered              
+        bin regs[9]                                       334          1    Covered              
+        bin regs[10]                                      327          1    Covered              
+        bin regs[11]                                      347          1    Covered              
+        bin regs[12]                                      321          1    Covered              
+        bin regs[13]                                      319          1    Covered              
+        bin regs[14]                                      344          1    Covered              
+        bin regs[15]                                      310          1    Covered              
+        bin regs[16]                                      321          1    Covered              
+        bin regs[17]                                      313          1    Covered              
+        bin regs[18]                                      302          1    Covered              
+        bin regs[19]                                      332          1    Covered              
+        bin regs[20]                                      345          1    Covered              
+        bin regs[21]                                      348          1    Covered              
+        bin regs[22]                                      295          1    Covered              
+        bin regs[23]                                      319          1    Covered              
+        bin regs[24]                                      308          1    Covered              
+        bin regs[25]                                      343          1    Covered              
+        bin regs[26]                                      327          1    Covered              
+        bin regs[27]                                      316          1    Covered              
+        bin regs[28]                                      339          1    Covered              
+        bin regs[29]                                      332          1    Covered              
+        bin regs[30]                                      337          1    Covered              
+        bin regs[31]                                      369          1    Covered              
+    Coverpoint cp_rs1                               100.0000%        100    Covered              
+        covered/total bins:                                32         32                      
+        missing/total bins:                                 0         32                      
+        % Hit:                                      100.0000%        100                      
+        bin regs[0]                                       363          1    Covered              
+        bin regs[1]                                       360          1    Covered              
+        bin regs[2]                                       313          1    Covered              
+        bin regs[3]                                       328          1    Covered              
+        bin regs[4]                                       342          1    Covered              
+        bin regs[5]                                       344          1    Covered              
+        bin regs[6]                                       306          1    Covered              
+        bin regs[7]                                       292          1    Covered              
+        bin regs[8]                                       331          1    Covered              
+        bin regs[9]                                       349          1    Covered              
+        bin regs[10]                                      330          1    Covered              
+        bin regs[11]                                      337          1    Covered              
+        bin regs[12]                                      310          1    Covered              
+        bin regs[13]                                      307          1    Covered              
+        bin regs[14]                                      320          1    Covered              
+        bin regs[15]                                      315          1    Covered              
+        bin regs[16]                                      323          1    Covered              
+        bin regs[17]                                      329          1    Covered              
+        bin regs[18]                                      335          1    Covered              
+        bin regs[19]                                      345          1    Covered              
+        bin regs[20]                                      323          1    Covered              
+        bin regs[21]                                      328          1    Covered              
+        bin regs[22]                                      333          1    Covered              
+        bin regs[23]                                      341          1    Covered              
+        bin regs[24]                                      306          1    Covered              
+        bin regs[25]                                      325          1    Covered              
+        bin regs[26]                                      353          1    Covered              
+        bin regs[27]                                      312          1    Covered              
+        bin regs[28]                                      321          1    Covered              
+        bin regs[29]                                      317          1    Covered              
+        bin regs[30]                                      336          1    Covered              
+        bin regs[31]                                      336          1    Covered              
+    Coverpoint cp_rs2                               100.0000%        100    Covered              
+        covered/total bins:                                32         32                      
+        missing/total bins:                                 0         32                      
+        % Hit:                                      100.0000%        100                      
+        bin regs[0]                                       322          1    Covered              
+        bin regs[1]                                       374          1    Covered              
+        bin regs[2]                                       392          1    Covered              
+        bin regs[3]                                       320          1    Covered              
+        bin regs[4]                                       339          1    Covered              
+        bin regs[5]                                       323          1    Covered              
+        bin regs[6]                                       360          1    Covered              
+        bin regs[7]                                       329          1    Covered              
+        bin regs[8]                                       319          1    Covered              
+        bin regs[9]                                       304          1    Covered              
+        bin regs[10]                                      311          1    Covered              
+        bin regs[11]                                      330          1    Covered              
+        bin regs[12]                                      322          1    Covered              
+        bin regs[13]                                      317          1    Covered              
+        bin regs[14]                                      304          1    Covered              
+        bin regs[15]                                      327          1    Covered              
+        bin regs[16]                                      337          1    Covered              
+        bin regs[17]                                      320          1    Covered              
+        bin regs[18]                                      304          1    Covered              
+        bin regs[19]                                      288          1    Covered              
+        bin regs[20]                                      304          1    Covered              
+        bin regs[21]                                      373          1    Covered              
+        bin regs[22]                                      343          1    Covered              
+        bin regs[23]                                      330          1    Covered              
+        bin regs[24]                                      326          1    Covered              
+        bin regs[25]                                      306          1    Covered              
+        bin regs[26]                                      360          1    Covered              
+        bin regs[27]                                      338          1    Covered              
+        bin regs[28]                                      315          1    Covered              
+        bin regs[29]                                      303          1    Covered              
+        bin regs[30]                                      355          1    Covered              
+        bin regs[31]                                      315          1    Covered              
+    Cross op_x_rd                                   100.0000%        100    Covered              
+        covered/total bins:                               288        288                      
+        missing/total bins:                                 0        288                      
+        % Hit:                                      100.0000%        100                      
+        bin <instructions[ADD],regs[6]>                    23          1    Covered              
+        bin <instructions[MUL],regs[5]>                    69          1    Covered              
+        bin <instructions[SUB],regs[7]>                    67          1    Covered              
+        bin <instructions[OR],regs[17]>                    33          1    Covered              
+        bin <instructions[XOR],regs[28]>                   44          1    Covered              
+        bin <instructions[SLL],regs[29]>                   33          1    Covered              
+        bin <instructions[SRL],regs[30]>                   31          1    Covered              
+        bin <instructions[AND],regs[31]>                   47          1    Covered              
+        bin <instructions[ADD],regs[5]>                    21          1    Covered              
+        bin <instructions[SUB],regs[6]>                    63          1    Covered              
+        bin <instructions[OR],regs[7]>                     32          1    Covered              
+        bin <instructions[ADD],regs[8]>                    21          1    Covered              
+        bin <instructions[ADD],regs[0]>                    12          1    Covered              
+        bin <instructions[SUB],regs[0]>                    41          1    Covered              
+        bin <instructions[MUL],regs[0]>                    58          1    Covered              
+        bin <instructions[SLL],regs[0]>                    33          1    Covered              
+        bin <instructions[SRL],regs[0]>                    29          1    Covered              
+        bin <instructions[XOR],regs[0]>                    21          1    Covered              
+        bin <instructions[OR],regs[0]>                     18          1    Covered              
+        bin <instructions[AND],regs[0]>                    35          1    Covered              
+        bin <instructions[SLT],regs[0]>                    36          1    Covered              
+        bin <instructions[ADD],regs[1]>                    20          1    Covered              
+        bin <instructions[SUB],regs[1]>                    65          1    Covered              
+        bin <instructions[MUL],regs[1]>                    64          1    Covered              
+        bin <instructions[SLL],regs[1]>                    41          1    Covered              
+        bin <instructions[SRL],regs[1]>                    34          1    Covered              
+        bin <instructions[OR],regs[1]>                     27          1    Covered              
+        bin <instructions[AND],regs[1]>                    34          1    Covered              
+        bin <instructions[SLT],regs[1]>                    27          1    Covered              
+        bin <instructions[SUB],regs[2]>                    75          1    Covered              
+        bin <instructions[MUL],regs[2]>                    49          1    Covered              
+        bin <instructions[SLL],regs[2]>                    34          1    Covered              
+        bin <instructions[SRL],regs[2]>                    23          1    Covered              
+        bin <instructions[XOR],regs[2]>                    24          1    Covered              
+        bin <instructions[OR],regs[2]>                     36          1    Covered              
+        bin <instructions[AND],regs[2]>                    38          1    Covered              
+        bin <instructions[SLT],regs[2]>                    28          1    Covered              
+        bin <instructions[ADD],regs[3]>                    17          1    Covered              
+        bin <instructions[SUB],regs[3]>                    65          1    Covered              
+        bin <instructions[MUL],regs[3]>                    47          1    Covered              
+        bin <instructions[SLL],regs[3]>                    46          1    Covered              
+        bin <instructions[SRL],regs[3]>                    33          1    Covered              
+        bin <instructions[XOR],regs[3]>                    30          1    Covered              
+        bin <instructions[OR],regs[3]>                     25          1    Covered              
+        bin <instructions[AND],regs[3]>                    36          1    Covered              
+        bin <instructions[SLT],regs[3]>                    39          1    Covered              
+        bin <instructions[ADD],regs[4]>                    24          1    Covered              
+        bin <instructions[SUB],regs[4]>                    64          1    Covered              
+        bin <instructions[MUL],regs[4]>                    52          1    Covered              
+        bin <instructions[SLL],regs[4]>                    36          1    Covered              
+        bin <instructions[SRL],regs[4]>                    29          1    Covered              
+        bin <instructions[XOR],regs[4]>                    27          1    Covered              
+        bin <instructions[OR],regs[4]>                     38          1    Covered              
+        bin <instructions[AND],regs[4]>                    35          1    Covered              
+        bin <instructions[SLT],regs[4]>                    32          1    Covered              
+        bin <instructions[SUB],regs[5]>                    65          1    Covered              
+        bin <instructions[SLL],regs[5]>                    22          1    Covered              
+        bin <instructions[SRL],regs[5]>                    32          1    Covered              
+        bin <instructions[XOR],regs[5]>                    32          1    Covered              
+        bin <instructions[OR],regs[5]>                     30          1    Covered              
+        bin <instructions[AND],regs[5]>                    22          1    Covered              
+        bin <instructions[SLT],regs[5]>                    30          1    Covered              
+        bin <instructions[MUL],regs[6]>                    59          1    Covered              
+        bin <instructions[SLL],regs[6]>                    27          1    Covered              
+        bin <instructions[SRL],regs[6]>                    21          1    Covered              
+        bin <instructions[XOR],regs[6]>                    28          1    Covered              
+        bin <instructions[OR],regs[6]>                     17          1    Covered              
+        bin <instructions[AND],regs[6]>                    42          1    Covered              
+        bin <instructions[SLT],regs[6]>                    35          1    Covered              
+        bin <instructions[ADD],regs[7]>                    58          1    Covered              
+        bin <instructions[MUL],regs[7]>                    64          1    Covered              
+        bin <instructions[SLL],regs[7]>                    40          1    Covered              
+        bin <instructions[SRL],regs[7]>                    34          1    Covered              
+        bin <instructions[XOR],regs[7]>                    34          1    Covered              
+        bin <instructions[AND],regs[7]>                    30          1    Covered              
+        bin <instructions[SLT],regs[7]>                    31          1    Covered              
+        bin <instructions[SUB],regs[8]>                    70          1    Covered              
+        bin <instructions[MUL],regs[8]>                    68          1    Covered              
+        bin <instructions[SLL],regs[8]>                    26          1    Covered              
+        bin <instructions[SRL],regs[8]>                    20          1    Covered              
+        bin <instructions[XOR],regs[8]>                    32          1    Covered              
+        bin <instructions[OR],regs[8]>                     31          1    Covered              
+        bin <instructions[AND],regs[8]>                    34          1    Covered              
+        bin <instructions[SLT],regs[8]>                    23          1    Covered              
+        bin <instructions[ADD],regs[9]>                    20          1    Covered              
+        bin <instructions[SUB],regs[9]>                    62          1    Covered              
+        bin <instructions[MUL],regs[9]>                    69          1    Covered              
+        bin <instructions[SLL],regs[9]>                    28          1    Covered              
+        bin <instructions[SRL],regs[9]>                    34          1    Covered              
+        bin <instructions[XOR],regs[9]>                    24          1    Covered              
+        bin <instructions[OR],regs[9]>                     36          1    Covered              
+        bin <instructions[AND],regs[9]>                    39          1    Covered              
+        bin <instructions[SLT],regs[9]>                    22          1    Covered              
+        bin <instructions[ADD],regs[10]>                   21          1    Covered              
+        bin <instructions[SUB],regs[10]>                   52          1    Covered              
+        bin <instructions[MUL],regs[10]>                   57          1    Covered              
+        bin <instructions[SLL],regs[10]>                   27          1    Covered              
+        bin <instructions[SRL],regs[10]>                   31          1    Covered              
+        bin <instructions[OR],regs[10]>                    38          1    Covered              
+        bin <instructions[AND],regs[10]>                   34          1    Covered              
+        bin <instructions[SLT],regs[10]>                   39          1    Covered              
+        bin <instructions[ADD],regs[11]>                   26          1    Covered              
+        bin <instructions[SUB],regs[11]>                   74          1    Covered              
+        bin <instructions[MUL],regs[11]>                   68          1    Covered              
+        bin <instructions[SLL],regs[11]>                   33          1    Covered              
+        bin <instructions[SRL],regs[11]>                   30          1    Covered              
+        bin <instructions[XOR],regs[11]>                   32          1    Covered              
+        bin <instructions[OR],regs[11]>                    27          1    Covered              
+        bin <instructions[AND],regs[11]>                   24          1    Covered              
+        bin <instructions[SLT],regs[11]>                   33          1    Covered              
+        bin <instructions[ADD],regs[12]>                   23          1    Covered              
+        bin <instructions[SUB],regs[12]>                   63          1    Covered              
+        bin <instructions[MUL],regs[12]>                   57          1    Covered              
+        bin <instructions[SLL],regs[12]>                   25          1    Covered              
+        bin <instructions[SRL],regs[12]>                   28          1    Covered              
+        bin <instructions[XOR],regs[12]>                   36          1    Covered              
+        bin <instructions[OR],regs[12]>                    27          1    Covered              
+        bin <instructions[AND],regs[12]>                   22          1    Covered              
+        bin <instructions[SLT],regs[12]>                   40          1    Covered              
+        bin <instructions[ADD],regs[13]>                   19          1    Covered              
+        bin <instructions[SUB],regs[13]>                   62          1    Covered              
+        bin <instructions[MUL],regs[13]>                   55          1    Covered              
+        bin <instructions[SLL],regs[13]>                   32          1    Covered              
+        bin <instructions[SRL],regs[13]>                   43          1    Covered              
+        bin <instructions[XOR],regs[13]>                   20          1    Covered              
+        bin <instructions[OR],regs[13]>                    34          1    Covered              
+        bin <instructions[SLT],regs[13]>                   28          1    Covered              
+        bin <instructions[ADD],regs[14]>                   28          1    Covered              
+        bin <instructions[SUB],regs[14]>                   54          1    Covered              
+        bin <instructions[MUL],regs[14]>                   62          1    Covered              
+        bin <instructions[SLL],regs[14]>                   26          1    Covered              
+        bin <instructions[SRL],regs[14]>                   36          1    Covered              
+        bin <instructions[XOR],regs[14]>                   31          1    Covered              
+        bin <instructions[OR],regs[14]>                    34          1    Covered              
+        bin <instructions[AND],regs[14]>                   42          1    Covered              
+        bin <instructions[SLT],regs[14]>                   31          1    Covered              
+        bin <instructions[ADD],regs[15]>                   22          1    Covered              
+        bin <instructions[SUB],regs[15]>                   62          1    Covered              
+        bin <instructions[MUL],regs[15]>                   67          1    Covered              
+        bin <instructions[SLL],regs[15]>                   19          1    Covered              
+        bin <instructions[SRL],regs[15]>                   29          1    Covered              
+        bin <instructions[XOR],regs[15]>                   29          1    Covered              
+        bin <instructions[OR],regs[15]>                    31          1    Covered              
+        bin <instructions[AND],regs[15]>                   21          1    Covered              
+        bin <instructions[SLT],regs[15]>                   30          1    Covered              
+        bin <instructions[SUB],regs[16]>                   66          1    Covered              
+        bin <instructions[MUL],regs[16]>                   50          1    Covered              
+        bin <instructions[SLL],regs[16]>                   25          1    Covered              
+        bin <instructions[SRL],regs[16]>                   32          1    Covered              
+        bin <instructions[XOR],regs[16]>                   29          1    Covered              
+        bin <instructions[OR],regs[16]>                    23          1    Covered              
+        bin <instructions[AND],regs[16]>                   46          1    Covered              
+        bin <instructions[SLT],regs[16]>                   30          1    Covered              
+        bin <instructions[ADD],regs[17]>                   21          1    Covered              
+        bin <instructions[SUB],regs[17]>                   62          1    Covered              
+        bin <instructions[MUL],regs[17]>                   60          1    Covered              
+        bin <instructions[SLL],regs[17]>                   22          1    Covered              
+        bin <instructions[SRL],regs[17]>                   28          1    Covered              
+        bin <instructions[XOR],regs[17]>                   27          1    Covered              
+        bin <instructions[AND],regs[17]>                   34          1    Covered              
+        bin <instructions[SLT],regs[17]>                   26          1    Covered              
+        bin <instructions[ADD],regs[18]>                   17          1    Covered              
+        bin <instructions[SUB],regs[18]>                   54          1    Covered              
+        bin <instructions[MUL],regs[18]>                   65          1    Covered              
+        bin <instructions[SLL],regs[18]>                   29          1    Covered              
+        bin <instructions[SRL],regs[18]>                   28          1    Covered              
+        bin <instructions[XOR],regs[18]>                   19          1    Covered              
+        bin <instructions[OR],regs[18]>                    32          1    Covered              
+        bin <instructions[AND],regs[18]>                   36          1    Covered              
+        bin <instructions[SLT],regs[18]>                   22          1    Covered              
+        bin <instructions[ADD],regs[19]>                   18          1    Covered              
+        bin <instructions[SUB],regs[19]>                   58          1    Covered              
+        bin <instructions[MUL],regs[19]>                   65          1    Covered              
+        bin <instructions[SLL],regs[19]>                   30          1    Covered              
+        bin <instructions[SRL],regs[19]>                   24          1    Covered              
+        bin <instructions[XOR],regs[19]>                   42          1    Covered              
+        bin <instructions[OR],regs[19]>                    35          1    Covered              
+        bin <instructions[AND],regs[19]>                   32          1    Covered              
+        bin <instructions[SLT],regs[19]>                   28          1    Covered              
+        bin <instructions[ADD],regs[20]>                   16          1    Covered              
+        bin <instructions[SUB],regs[20]>                   59          1    Covered              
+        bin <instructions[MUL],regs[20]>                   67          1    Covered              
+        bin <instructions[SLL],regs[20]>                   36          1    Covered              
+        bin <instructions[SRL],regs[20]>                   46          1    Covered              
+        bin <instructions[XOR],regs[20]>                   15          1    Covered              
+        bin <instructions[OR],regs[20]>                    32          1    Covered              
+        bin <instructions[AND],regs[20]>                   40          1    Covered              
+        bin <instructions[SLT],regs[20]>                   34          1    Covered              
+        bin <instructions[ADD],regs[21]>                   22          1    Covered              
+        bin <instructions[SUB],regs[21]>                   57          1    Covered              
+        bin <instructions[MUL],regs[21]>                   76          1    Covered              
+        bin <instructions[SLL],regs[21]>                   38          1    Covered              
+        bin <instructions[SRL],regs[21]>                   21          1    Covered              
+        bin <instructions[XOR],regs[21]>                   29          1    Covered              
+        bin <instructions[OR],regs[21]>                    29          1    Covered              
+        bin <instructions[AND],regs[21]>                   33          1    Covered              
+        bin <instructions[SLT],regs[21]>                   43          1    Covered              
+        bin <instructions[ADD],regs[22]>                   17          1    Covered              
+        bin <instructions[SUB],regs[22]>                   45          1    Covered              
+        bin <instructions[MUL],regs[22]>                   65          1    Covered              
+        bin <instructions[SRL],regs[22]>                   25          1    Covered              
+        bin <instructions[OR],regs[22]>                    25          1    Covered              
+        bin <instructions[AND],regs[22]>                   30          1    Covered              
+        bin <instructions[SLT],regs[22]>                   29          1    Covered              
+        bin <instructions[SUB],regs[23]>                   50          1    Covered              
+        bin <instructions[MUL],regs[23]>                   65          1    Covered              
+        bin <instructions[SLL],regs[23]>                   25          1    Covered              
+        bin <instructions[SRL],regs[23]>                   27          1    Covered              
+        bin <instructions[XOR],regs[23]>                   33          1    Covered              
+        bin <instructions[OR],regs[23]>                    34          1    Covered              
+        bin <instructions[AND],regs[23]>                   28          1    Covered              
+        bin <instructions[SLT],regs[23]>                   36          1    Covered              
+        bin <instructions[ADD],regs[24]>                   16          1    Covered              
+        bin <instructions[SUB],regs[24]>                   44          1    Covered              
+        bin <instructions[MUL],regs[24]>                   60          1    Covered              
+        bin <instructions[SLL],regs[24]>                   28          1    Covered              
+        bin <instructions[SRL],regs[24]>                   29          1    Covered              
+        bin <instructions[XOR],regs[24]>                   34          1    Covered              
+        bin <instructions[OR],regs[24]>                    40          1    Covered              
+        bin <instructions[AND],regs[24]>                   22          1    Covered              
+        bin <instructions[SLT],regs[24]>                   35          1    Covered              
+        bin <instructions[ADD],regs[25]>                   21          1    Covered              
+        bin <instructions[SUB],regs[25]>                   79          1    Covered              
+        bin <instructions[MUL],regs[25]>                   58          1    Covered              
+        bin <instructions[SLL],regs[25]>                   35          1    Covered              
+        bin <instructions[SRL],regs[25]>                   27          1    Covered              
+        bin <instructions[XOR],regs[25]>                   29          1    Covered              
+        bin <instructions[OR],regs[25]>                    32          1    Covered              
+        bin <instructions[AND],regs[25]>                   29          1    Covered              
+        bin <instructions[SLT],regs[25]>                   33          1    Covered              
+        bin <instructions[ADD],regs[26]>                   16          1    Covered              
+        bin <instructions[SUB],regs[26]>                   59          1    Covered              
+        bin <instructions[MUL],regs[26]>                   66          1    Covered              
+        bin <instructions[SLL],regs[26]>                   35          1    Covered              
+        bin <instructions[SRL],regs[26]>                   30          1    Covered              
+        bin <instructions[XOR],regs[26]>                   33          1    Covered              
+        bin <instructions[OR],regs[26]>                    33          1    Covered              
+        bin <instructions[AND],regs[26]>                   31          1    Covered              
+        bin <instructions[SLT],regs[26]>                   24          1    Covered              
+        bin <instructions[ADD],regs[27]>                   21          1    Covered              
+        bin <instructions[SUB],regs[27]>                   60          1    Covered              
+        bin <instructions[MUL],regs[27]>                   48          1    Covered              
+        bin <instructions[SLL],regs[27]>                   27          1    Covered              
+        bin <instructions[SRL],regs[27]>                   22          1    Covered              
+        bin <instructions[XOR],regs[27]>                   36          1    Covered              
+        bin <instructions[OR],regs[27]>                    38          1    Covered              
+        bin <instructions[AND],regs[27]>                   44          1    Covered              
+        bin <instructions[SLT],regs[27]>                   20          1    Covered              
+        bin <instructions[ADD],regs[28]>                   22          1    Covered              
+        bin <instructions[SUB],regs[28]>                   67          1    Covered              
+        bin <instructions[MUL],regs[28]>                   59          1    Covered              
+        bin <instructions[SLL],regs[28]>                   30          1    Covered              
+        bin <instructions[SRL],regs[28]>                   35          1    Covered              
+        bin <instructions[OR],regs[28]>                    32          1    Covered              
+        bin <instructions[AND],regs[28]>                   26          1    Covered              
+        bin <instructions[SLT],regs[28]>                   24          1    Covered              
+        bin <instructions[SUB],regs[29]>                   67          1    Covered              
+        bin <instructions[MUL],regs[29]>                   51          1    Covered              
+        bin <instructions[SRL],regs[29]>                   36          1    Covered              
+        bin <instructions[XOR],regs[29]>                   33          1    Covered              
+        bin <instructions[OR],regs[29]>                    29          1    Covered              
+        bin <instructions[AND],regs[29]>                   37          1    Covered              
+        bin <instructions[SLT],regs[29]>                   30          1    Covered              
+        bin <instructions[SUB],regs[30]>                   67          1    Covered              
+        bin <instructions[MUL],regs[30]>                   68          1    Covered              
+        bin <instructions[SLL],regs[30]>                   33          1    Covered              
+        bin <instructions[XOR],regs[30]>                   39          1    Covered              
+        bin <instructions[OR],regs[30]>                    24          1    Covered              
+        bin <instructions[AND],regs[30]>                   33          1    Covered              
+        bin <instructions[SLT],regs[30]>                   31          1    Covered              
+        bin <instructions[ADD],regs[31]>                   15          1    Covered              
+        bin <instructions[SUB],regs[31]>                   74          1    Covered              
+        bin <instructions[MUL],regs[31]>                   63          1    Covered              
+        bin <instructions[SLL],regs[31]>                   30          1    Covered              
+        bin <instructions[SRL],regs[31]>                   23          1    Covered              
+        bin <instructions[XOR],regs[31]>                   48          1    Covered              
+        bin <instructions[OR],regs[31]>                    38          1    Covered              
+        bin <instructions[SLT],regs[31]>                   31          1    Covered              
+        bin <instructions[XOR],regs[1]>                    23          1    Covered              
+        bin <instructions[ADD],regs[2]>                     9          1    Covered              
+        bin <instructions[XOR],regs[10]>                   28          1    Covered              
+        bin <instructions[AND],regs[13]>                   26          1    Covered              
+        bin <instructions[ADD],regs[16]>                   20          1    Covered              
+        bin <instructions[SLL],regs[22]>                   25          1    Covered              
+        bin <instructions[XOR],regs[22]>                   34          1    Covered              
+        bin <instructions[ADD],regs[23]>                   21          1    Covered              
+        bin <instructions[ADD],regs[29]>                   16          1    Covered              
+        bin <instructions[ADD],regs[30]>                   11          1    Covered              
+ TYPE /riscv_tb_pkg/riscv_coverage/result_cg        100.0000%        100    Covered              
+    covered/total bins:                                    81         81                      
+    missing/total bins:                                     0         81                      
+    % Hit:                                          100.0000%        100                      
+    Coverpoint result_cg::cp_op                     100.0000%        100    Covered              
+        covered/total bins:                                 9          9                      
+        missing/total bins:                                 0          9                      
+        % Hit:                                      100.0000%        100                      
+        bin instructions[ADD]                             654          1    Covered              
+        bin instructions[SUB]                            1972          1    Covered              
+        bin instructions[MUL]                            1951          1    Covered              
+        bin instructions[SLL]                             976          1    Covered              
+        bin instructions[SRL]                             950          1    Covered              
+        bin instructions[XOR]                             975          1    Covered              
+        bin instructions[OR]                              990          1    Covered              
+        bin instructions[AND]                            1062          1    Covered              
+        bin instructions[SLT]                             980          1    Covered              
+    Coverpoint result_cg::cp_zero                   100.0000%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                      100.0000%        100                      
+        bin clear                                        8851          1    Covered              
+        bin asserted                                     1659          1    Covered              
+    Coverpoint result_cg::cp_shift                  100.0000%        100    Covered              
+        covered/total bins:                                 4          4                      
+        missing/total bins:                                 0          4                      
+        % Hit:                                      100.0000%        100                      
+        bin zero                                          150          1    Covered              
+        bin shift_1_15                                    105          1    Covered              
+        bin shift_16_31                                    92          1    Covered              
+        bin upper_bits_set                               1579          1    Covered              
+    Coverpoint result_cg::cp_in1_range              100.0000%        100    Covered              
+        covered/total bins:                                 6          6                      
+        missing/total bins:                                 0          6                      
+        % Hit:                                      100.0000%        100                      
+        bin zero                                          880          1    Covered              
+        bin small_positive                               1588          1    Covered              
+        bin max_positive                                  353          1    Covered              
+        bin min_negative                                  400          1    Covered              
+        bin small_negative                                 12          1    Covered              
+        bin all_ones                                      338          1    Covered              
+    Coverpoint result_cg::cp_in2_range              100.0000%        100    Covered              
+        covered/total bins:                                 6          6                      
+        missing/total bins:                                 0          6                      
+        % Hit:                                      100.0000%        100                      
+        bin zero                                          806          1    Covered              
+        bin small_positive                               1520          1    Covered              
+        bin max_positive                                  363          1    Covered              
+        bin min_negative                                  405          1    Covered              
+        bin small_negative                                  9          1    Covered              
+        bin all_ones                                      311          1    Covered              
+    Cross result_cg::op_x_zero                      100.0000%        100    Covered              
+        covered/total bins:                                18         18                      
+        missing/total bins:                                 0         18                      
+        % Hit:                                      100.0000%        100                      
+        bin <instructions[ADD],clear>                     646          1    Covered              
+        bin <instructions[SUB],clear>                    1883          1    Covered              
+        bin <instructions[MUL],clear>                    1616          1    Covered              
+        bin <instructions[SLL],clear>                     787          1    Covered              
+        bin <instructions[XOR],clear>                     943          1    Covered              
+        bin <instructions[OR],clear>                      979          1    Covered              
+        bin <instructions[AND],clear>                     797          1    Covered              
+        bin <instructions[SRL],asserted>                  211          1    Covered              
+        bin <instructions[SUB],asserted>                   89          1    Covered              
+        bin <instructions[SRL],clear>                     739          1    Covered              
+        bin <instructions[SLT],clear>                     461          1    Covered              
+        bin <instructions[ADD],asserted>                    8          1    Covered              
+        bin <instructions[MUL],asserted>                  335          1    Covered              
+        bin <instructions[SLL],asserted>                  189          1    Covered              
+        bin <instructions[XOR],asserted>                   32          1    Covered              
+        bin <instructions[OR],asserted>                    11          1    Covered              
+        bin <instructions[AND],asserted>                  265          1    Covered              
+        bin <instructions[SLT],asserted>                  519          1    Covered              
+    Cross result_cg::cross_corner_operands          100.0000%        100    Covered              
+        covered/total bins:                                36         36                      
+        missing/total bins:                                 0         36                      
+        % Hit:                                      100.0000%        100                      
+        bin <small_positive,small_positive>               580          1    Covered              
+        bin <zero,zero>                                    92          1    Covered              
+        bin <small_positive,zero>                          93          1    Covered              
+        bin <max_positive,zero>                            24          1    Covered              
+        bin <min_negative,zero>                            26          1    Covered              
+        bin <all_ones,zero>                                16          1    Covered              
+        bin <zero,small_positive>                          94          1    Covered              
+        bin <max_positive,small_positive>                  29          1    Covered              
+        bin <min_negative,small_positive>                  42          1    Covered              
+        bin <all_ones,small_positive>                      40          1    Covered              
+        bin <zero,max_positive>                            34          1    Covered              
+        bin <small_positive,max_positive>                  43          1    Covered              
+        bin <max_positive,max_positive>                    24          1    Covered              
+        bin <all_ones,max_positive>                        17          1    Covered              
+        bin <zero,min_negative>                            36          1    Covered              
+        bin <small_positive,min_negative>                  44          1    Covered              
+        bin <max_positive,min_negative>                    13          1    Covered              
+        bin <min_negative,min_negative>                    31          1    Covered              
+        bin <all_ones,min_negative>                        21          1    Covered              
+        bin <zero,all_ones>                                29          1    Covered              
+        bin <small_positive,all_ones>                      37          1    Covered              
+        bin <min_negative,all_ones>                        15          1    Covered              
+        bin <all_ones,all_ones>                            26          1    Covered              
+        bin <small_negative,zero>                           2          1    Covered              
+        bin <small_negative,small_positive>                 2          1    Covered              
+        bin <min_negative,max_positive>                    14          1    Covered              
+        bin <small_negative,max_positive>                   1          1    Covered              
+        bin <small_negative,min_negative>                   1          1    Covered              
+        bin <zero,small_negative>                           1          1    Covered              
+        bin <small_positive,small_negative>                 2          1    Covered              
+        bin <max_positive,small_negative>                   1          1    Covered              
+        bin <min_negative,small_negative>                   1          1    Covered              
+        bin <small_negative,small_negative>                 1          1    Covered              
+        bin <all_ones,small_negative>                       1          1    Covered              
+        bin <max_positive,all_ones>                        13          1    Covered              
+        bin <small_negative,all_ones>                       1          1    Covered              
+ Covergroup instance \/riscv_tb_pkg::riscv_coverage::result_cg  
+                                                    100.0000%        100    Covered              
+    covered/total bins:                                    81         81                      
+    missing/total bins:                                     0         81                      
+    % Hit:                                          100.0000%        100                      
+    Coverpoint cp_op                                100.0000%        100    Covered              
+        covered/total bins:                                 9          9                      
+        missing/total bins:                                 0          9                      
+        % Hit:                                      100.0000%        100                      
+        bin instructions[ADD]                             654          1    Covered              
+        bin instructions[SUB]                            1972          1    Covered              
+        bin instructions[MUL]                            1951          1    Covered              
+        bin instructions[SLL]                             976          1    Covered              
+        bin instructions[SRL]                             950          1    Covered              
+        bin instructions[XOR]                             975          1    Covered              
+        bin instructions[OR]                              990          1    Covered              
+        bin instructions[AND]                            1062          1    Covered              
+        bin instructions[SLT]                             980          1    Covered              
+    Coverpoint cp_zero                              100.0000%        100    Covered              
+        covered/total bins:                                 2          2                      
+        missing/total bins:                                 0          2                      
+        % Hit:                                      100.0000%        100                      
+        bin clear                                        8851          1    Covered              
+        bin asserted                                     1659          1    Covered              
+    Coverpoint cp_shift                             100.0000%        100    Covered              
+        covered/total bins:                                 4          4                      
+        missing/total bins:                                 0          4                      
+        % Hit:                                      100.0000%        100                      
+        bin zero                                          150          1    Covered              
+        bin shift_1_15                                    105          1    Covered              
+        bin shift_16_31                                    92          1    Covered              
+        bin upper_bits_set                               1579          1    Covered              
+    Coverpoint cp_in1_range                         100.0000%        100    Covered              
+        covered/total bins:                                 6          6                      
+        missing/total bins:                                 0          6                      
+        % Hit:                                      100.0000%        100                      
+        bin zero                                          880          1    Covered              
+        bin small_positive                               1588          1    Covered              
+        bin max_positive                                  353          1    Covered              
+        bin min_negative                                  400          1    Covered              
+        bin small_negative                                 12          1    Covered              
+        bin all_ones                                      338          1    Covered              
+    Coverpoint cp_in2_range                         100.0000%        100    Covered              
+        covered/total bins:                                 6          6                      
+        missing/total bins:                                 0          6                      
+        % Hit:                                      100.0000%        100                      
+        bin zero                                          806          1    Covered              
+        bin small_positive                               1520          1    Covered              
+        bin max_positive                                  363          1    Covered              
+        bin min_negative                                  405          1    Covered              
+        bin small_negative                                  9          1    Covered              
+        bin all_ones                                      311          1    Covered              
+    Cross op_x_zero                                 100.0000%        100    Covered              
+        covered/total bins:                                18         18                      
+        missing/total bins:                                 0         18                      
+        % Hit:                                      100.0000%        100                      
+        bin <instructions[ADD],clear>                     646          1    Covered              
+        bin <instructions[SUB],clear>                    1883          1    Covered              
+        bin <instructions[MUL],clear>                    1616          1    Covered              
+        bin <instructions[SLL],clear>                     787          1    Covered              
+        bin <instructions[XOR],clear>                     943          1    Covered              
+        bin <instructions[OR],clear>                      979          1    Covered              
+        bin <instructions[AND],clear>                     797          1    Covered              
+        bin <instructions[SRL],asserted>                  211          1    Covered              
+        bin <instructions[SUB],asserted>                   89          1    Covered              
+        bin <instructions[SRL],clear>                     739          1    Covered              
+        bin <instructions[SLT],clear>                     461          1    Covered              
+        bin <instructions[ADD],asserted>                    8          1    Covered              
+        bin <instructions[MUL],asserted>                  335          1    Covered              
+        bin <instructions[SLL],asserted>                  189          1    Covered              
+        bin <instructions[XOR],asserted>                   32          1    Covered              
+        bin <instructions[OR],asserted>                    11          1    Covered              
+        bin <instructions[AND],asserted>                  265          1    Covered              
+        bin <instructions[SLT],asserted>                  519          1    Covered              
+    Cross cross_corner_operands                     100.0000%        100    Covered              
+        covered/total bins:                                36         36                      
+        missing/total bins:                                 0         36                      
+        % Hit:                                      100.0000%        100                      
+        bin <small_positive,small_positive>               580          1    Covered              
+        bin <zero,zero>                                    92          1    Covered              
+        bin <small_positive,zero>                          93          1    Covered              
+        bin <max_positive,zero>                            24          1    Covered              
+        bin <min_negative,zero>                            26          1    Covered              
+        bin <all_ones,zero>                                16          1    Covered              
+        bin <zero,small_positive>                          94          1    Covered              
+        bin <max_positive,small_positive>                  29          1    Covered              
+        bin <min_negative,small_positive>                  42          1    Covered              
+        bin <all_ones,small_positive>                      40          1    Covered              
+        bin <zero,max_positive>                            34          1    Covered              
+        bin <small_positive,max_positive>                  43          1    Covered              
+        bin <max_positive,max_positive>                    24          1    Covered              
+        bin <all_ones,max_positive>                        17          1    Covered              
+        bin <zero,min_negative>                            36          1    Covered              
+        bin <small_positive,min_negative>                  44          1    Covered              
+        bin <max_positive,min_negative>                    13          1    Covered              
+        bin <min_negative,min_negative>                    31          1    Covered              
+        bin <all_ones,min_negative>                        21          1    Covered              
+        bin <zero,all_ones>                                29          1    Covered              
+        bin <small_positive,all_ones>                      37          1    Covered              
+        bin <min_negative,all_ones>                        15          1    Covered              
+        bin <all_ones,all_ones>                            26          1    Covered              
+        bin <small_negative,zero>                           2          1    Covered              
+        bin <small_negative,small_positive>                 2          1    Covered              
+        bin <min_negative,max_positive>                    14          1    Covered              
+        bin <small_negative,max_positive>                   1          1    Covered              
+        bin <small_negative,min_negative>                   1          1    Covered              
+        bin <zero,small_negative>                           1          1    Covered              
+        bin <small_positive,small_negative>                 2          1    Covered              
+        bin <max_positive,small_negative>                   1          1    Covered              
+        bin <min_negative,small_negative>                   1          1    Covered              
+        bin <small_negative,small_negative>                 1          1    Covered              
+        bin <all_ones,small_negative>                       1          1    Covered              
+        bin <max_positive,all_ones>                        13          1    Covered              
+        bin <small_negative,all_ones>                       1          1    Covered              
+ TYPE /riscv_tb_pkg/riscv_coverage/hazard_cg        100.0000%        100    Covered              
+    covered/total bins:                                    65         65                      
+    missing/total bins:                                     0         65                      
+    % Hit:                                          100.0000%        100                      
+    Coverpoint hazard_cg::cp_producer               100.0000%        100    Covered              
+        covered/total bins:                                32         32                      
+        missing/total bins:                                 0         32                      
+        % Hit:                                      100.0000%        100                      
+        bin x0_discarded_write                            243          1    Covered              
+        bin writable[1]                                   302          1    Covered              
+        bin writable[2]                                   282          1    Covered              
+        bin writable[3]                                   299          1    Covered              
+        bin writable[4]                                   304          1    Covered              
+        bin writable[5]                                   278          1    Covered              
+        bin writable[6]                                   288          1    Covered              
+        bin writable[7]                                   317          1    Covered              
+        bin writable[8]                                   281          1    Covered              
+        bin writable[9]                                   308          1    Covered              
+        bin writable[10]                                  288          1    Covered              
+        bin writable[11]                                  303          1    Covered              
+        bin writable[12]                                  273          1    Covered              
+        bin writable[13]                                  269          1    Covered              
+        bin writable[14]                                  301          1    Covered              
+        bin writable[15]                                  251          1    Covered              
+        bin writable[16]                                  286          1    Covered              
+        bin writable[17]                                  270          1    Covered              
+        bin writable[18]                                  265          1    Covered              
+        bin writable[19]                                  286          1    Covered              
+        bin writable[20]                                  300          1    Covered              
+        bin writable[21]                                  300          1    Covered              
+        bin writable[22]                                  264          1    Covered              
+        bin writable[23]                                  274          1    Covered              
+        bin writable[24]                                  259          1    Covered              
+        bin writable[25]                                  307          1    Covered              
+        bin writable[26]                                  289          1    Covered              
+        bin writable[27]                                  277          1    Covered              
+        bin writable[28]                                  299          1    Covered              
+        bin writable[29]                                  291          1    Covered              
+        bin writable[30]                                  292          1    Covered              
+        bin writable[31]                                  303          1    Covered              
+    Coverpoint hazard_cg::cp_consumer               100.0000%        100    Covered              
+        covered/total bins:                                 1          1                      
+        missing/total bins:                                 0          1                      
+        % Hit:                                      100.0000%        100                      
+        bin reads_producer_address                        585          1    Covered              
+    Cross hazard_cg::cross_raw_hazard               100.0000%        100    Covered              
+        covered/total bins:                                32         32                      
+        missing/total bins:                                 0         32                      
+        % Hit:                                      100.0000%        100                      
+        bin <writable[5],reads_producer_address>           25          1    Covered              
+        bin <writable[7],reads_producer_address>           21          1    Covered              
+        bin <writable[1],reads_producer_address>           19          1    Covered              
+        bin <writable[2],reads_producer_address>           26          1    Covered              
+        bin <writable[3],reads_producer_address>           25          1    Covered              
+        bin <writable[4],reads_producer_address>           17          1    Covered              
+        bin <writable[6],reads_producer_address>           22          1    Covered              
+        bin <writable[8],reads_producer_address>           19          1    Covered              
+        bin <writable[10],reads_producer_address>          22          1    Covered              
+        bin <writable[11],reads_producer_address>          23          1    Covered              
+        bin <writable[14],reads_producer_address>          17          1    Covered              
+        bin <writable[15],reads_producer_address>          16          1    Covered              
+        bin <writable[16],reads_producer_address>          17          1    Covered              
+        bin <writable[17],reads_producer_address>          24          1    Covered              
+        bin <writable[18],reads_producer_address>          13          1    Covered              
+        bin <writable[19],reads_producer_address>          22          1    Covered              
+        bin <writable[20],reads_producer_address>          17          1    Covered              
+        bin <writable[21],reads_producer_address>          20          1    Covered              
+        bin <writable[24],reads_producer_address>          15          1    Covered              
+        bin <writable[25],reads_producer_address>          24          1    Covered              
+        bin <writable[26],reads_producer_address>          20          1    Covered              
+        bin <writable[27],reads_producer_address>          18          1    Covered              
+        bin <writable[28],reads_producer_address>          23          1    Covered              
+        bin <writable[29],reads_producer_address>          21          1    Covered              
+        bin <writable[30],reads_producer_address>          18          1    Covered              
+        bin <writable[31],reads_producer_address>          15          1    Covered              
+        bin <x0_discarded_write,reads_producer_address> 
+                                                            9          1    Covered              
+        bin <writable[9],reads_producer_address>           14          1    Covered              
+        bin <writable[12],reads_producer_address>          10          1    Covered              
+        bin <writable[13],reads_producer_address>          12          1    Covered              
+        bin <writable[22],reads_producer_address>          11          1    Covered              
+        bin <writable[23],reads_producer_address>          10          1    Covered              
+ Covergroup instance \/riscv_tb_pkg::riscv_coverage::hazard_cg  
+                                                    100.0000%        100    Covered              
+    covered/total bins:                                    65         65                      
+    missing/total bins:                                     0         65                      
+    % Hit:                                          100.0000%        100                      
+    Coverpoint cp_producer                          100.0000%        100    Covered              
+        covered/total bins:                                32         32                      
+        missing/total bins:                                 0         32                      
+        % Hit:                                      100.0000%        100                      
+        bin x0_discarded_write                            243          1    Covered              
+        bin writable[1]                                   302          1    Covered              
+        bin writable[2]                                   282          1    Covered              
+        bin writable[3]                                   299          1    Covered              
+        bin writable[4]                                   304          1    Covered              
+        bin writable[5]                                   278          1    Covered              
+        bin writable[6]                                   288          1    Covered              
+        bin writable[7]                                   317          1    Covered              
+        bin writable[8]                                   281          1    Covered              
+        bin writable[9]                                   308          1    Covered              
+        bin writable[10]                                  288          1    Covered              
+        bin writable[11]                                  303          1    Covered              
+        bin writable[12]                                  273          1    Covered              
+        bin writable[13]                                  269          1    Covered              
+        bin writable[14]                                  301          1    Covered              
+        bin writable[15]                                  251          1    Covered              
+        bin writable[16]                                  286          1    Covered              
+        bin writable[17]                                  270          1    Covered              
+        bin writable[18]                                  265          1    Covered              
+        bin writable[19]                                  286          1    Covered              
+        bin writable[20]                                  300          1    Covered              
+        bin writable[21]                                  300          1    Covered              
+        bin writable[22]                                  264          1    Covered              
+        bin writable[23]                                  274          1    Covered              
+        bin writable[24]                                  259          1    Covered              
+        bin writable[25]                                  307          1    Covered              
+        bin writable[26]                                  289          1    Covered              
+        bin writable[27]                                  277          1    Covered              
+        bin writable[28]                                  299          1    Covered              
+        bin writable[29]                                  291          1    Covered              
+        bin writable[30]                                  292          1    Covered              
+        bin writable[31]                                  303          1    Covered              
+    Coverpoint cp_consumer                          100.0000%        100    Covered              
+        covered/total bins:                                 1          1                      
+        missing/total bins:                                 0          1                      
+        % Hit:                                      100.0000%        100                      
+        bin reads_producer_address                        585          1    Covered              
+    Cross cross_raw_hazard                          100.0000%        100    Covered              
+        covered/total bins:                                32         32                      
+        missing/total bins:                                 0         32                      
+        % Hit:                                      100.0000%        100                      
+        bin <writable[5],reads_producer_address>           25          1    Covered              
+        bin <writable[7],reads_producer_address>           21          1    Covered              
+        bin <writable[1],reads_producer_address>           19          1    Covered              
+        bin <writable[2],reads_producer_address>           26          1    Covered              
+        bin <writable[3],reads_producer_address>           25          1    Covered              
+        bin <writable[4],reads_producer_address>           17          1    Covered              
+        bin <writable[6],reads_producer_address>           22          1    Covered              
+        bin <writable[8],reads_producer_address>           19          1    Covered              
+        bin <writable[10],reads_producer_address>          22          1    Covered              
+        bin <writable[11],reads_producer_address>          23          1    Covered              
+        bin <writable[14],reads_producer_address>          17          1    Covered              
+        bin <writable[15],reads_producer_address>          16          1    Covered              
+        bin <writable[16],reads_producer_address>          17          1    Covered              
+        bin <writable[17],reads_producer_address>          24          1    Covered              
+        bin <writable[18],reads_producer_address>          13          1    Covered              
+        bin <writable[19],reads_producer_address>          22          1    Covered              
+        bin <writable[20],reads_producer_address>          17          1    Covered              
+        bin <writable[21],reads_producer_address>          20          1    Covered              
+        bin <writable[24],reads_producer_address>          15          1    Covered              
+        bin <writable[25],reads_producer_address>          24          1    Covered              
+        bin <writable[26],reads_producer_address>          20          1    Covered              
+        bin <writable[27],reads_producer_address>          18          1    Covered              
+        bin <writable[28],reads_producer_address>          23          1    Covered              
+        bin <writable[29],reads_producer_address>          21          1    Covered              
+        bin <writable[30],reads_producer_address>          18          1    Covered              
+        bin <writable[31],reads_producer_address>          15          1    Covered              
+        bin <x0_discarded_write,reads_producer_address> 
+                                                            9          1    Covered              
+        bin <writable[9],reads_producer_address>           14          1    Covered              
+        bin <writable[12],reads_producer_address>          10          1    Covered              
+        bin <writable[13],reads_producer_address>          12          1    Covered              
+        bin <writable[22],reads_producer_address>          11          1    Covered              
+        bin <writable[23],reads_producer_address>          10          1    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.0000%  COVERGROUP TYPES: 5

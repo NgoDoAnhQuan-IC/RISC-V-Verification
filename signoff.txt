@@ -1,0 +1,12 @@
+Regression: 55 runs, 0 failed
+Functional coverage: 518/518 planned bins (16 metrics)
+Stmts: 69/69 = 100.0000% (goal 100%)
+Branches: 25/25 = 100.0000% (goal 95%)
+FEC Condition Terms: 3/3 = 100.0000% (goal 95%)
+FEC Expression Terms: 1/1 = 100.0000% (goal 95%)
+Toggle Bins: 3464/3678 = 94.1816% (goal 90%)
+Bits toggled both ways: 1731/1839 = 94.1272% (goal 90%)
+Project assertions: 141 instances, 0 failures, 0 without a pass
+Scoreboard: 10550 instructions compared; pin-level unit checks: 355
+Constrained-random: 10000 passed instruction transactions across 10 seeds
+SIGNOFF=PASS

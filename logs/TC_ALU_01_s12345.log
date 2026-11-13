@@ -1,0 +1,74 @@
+# End time: 11:40:19 on Nov 13,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -nodpiexports -coverage -onfinish stop -L uvm_1_2 -testname TC_ALU_01_s12345 -togglefixedsizearray -togglemaxfixedsizearray 4096 -wlfdeleteonquit -sv_lib C:/questasim64_10.7c/uvm-1.2/win64/uvm_dpi -l C:/Document/RISC-V Verification/sim/phase4/seed_12345_n1000_20261113_114006_22344/logs/TC_ALU_01_s12345.log -sv_seed 12345 "+UVM_TESTNAME=riscv_unit_matrix_test" "+UVM_VERBOSITY=UVM_MEDIUM" "+CASE=TC_ALU_01" "+N_INSTR=1000" work.tb_top 
+# Start time: 11:40:19 on Nov 13,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.riscv_if(fast)
+# Loading work.riscv_unit_if(fast)
+# Loading uvm_1_2.uvm_pkg
+# Loading work.riscv_tb_pkg(fast)
+# Loading work.tb_top(fast)
+# Loading work.riscv_if(fast)
+# Loading work.riscv_unit_fixture(fast)
+# Loading work.riscv_unit_if(fast)
+# Loading work.ALU(fast)
+# Loading work.CONTROL(fast)
+# Loading work.REG_FILE(fast)
+# Loading work.IFU(fast)
+# Loading work.INST_MEM(fast)
+# Loading work.riscv_alu_assertions(fast)
+# Loading work.riscv_decode_assertions(fast)
+# Loading work.riscv_rf_assertions(fast)
+# Loading work.riscv_pc_assertions(fast)
+# Loading work.PROCESSOR(fast)
+# Loading work.CONTROL(fast__1)
+# Loading work.DATAPATH(fast)
+# Loading uvm_1_2.questa_uvm_pkg(fast)
+# Loading C:/questasim64_10.7c/uvm-1.2/win64/uvm_dpi.dll
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test riscv_unit_matrix_test...
+# UVM_INFO C:/Document/RISC-V Verification/tb/test/riscv_matrix_test.sv(78) @ 26000: uvm_test_top [UNIT_CHECKS] TC_ALU_01 checked 4 expectations
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_objection.svh(1270) @ 26000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_report_server.svh(847) @ 26000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    6
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UNIT_CHECKS]     1
+# [UVM/RELNOTES]     1
+# 
+# ** Note: $finish    : C:/Document/RISC-V Verification/tb_top.sv(125)
+#    Time: 26 ns  Iteration: 73  Instance: /tb_top
+# Break in Module tb_top at C:/Document/RISC-V Verification/tb_top.sv line 125
+# Stopped at C:/Document/RISC-V Verification/tb_top.sv line 125

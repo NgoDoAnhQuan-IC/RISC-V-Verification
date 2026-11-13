@@ -1,0 +1,413 @@
+# End time: 11:42:40 on Nov 13,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -nodpiexports -coverage -onfinish stop -L uvm_1_2 -testname riscv_invalid_decode_test_s12345 -togglefixedsizearray -togglemaxfixedsizearray 4096 -wlfdeleteonquit -sv_lib C:/questasim64_10.7c/uvm-1.2/win64/uvm_dpi -l C:/Document/RISC-V Verification/sim/phase4/seed_12345_n1000_20261113_114006_22344/logs/riscv_invalid_decode_test_s12345.log -sv_seed 12345 "+UVM_TESTNAME=riscv_invalid_decode_test" "+UVM_VERBOSITY=UVM_MEDIUM" work.tb_top 
+# Start time: 11:42:40 on Nov 13,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.riscv_if(fast)
+# Loading work.riscv_unit_if(fast)
+# Loading uvm_1_2.uvm_pkg
+# Loading work.riscv_tb_pkg(fast)
+# Loading work.tb_top(fast)
+# Loading work.riscv_if(fast)
+# Loading work.riscv_unit_fixture(fast)
+# Loading work.riscv_unit_if(fast)
+# Loading work.ALU(fast)
+# Loading work.CONTROL(fast)
+# Loading work.REG_FILE(fast)
+# Loading work.IFU(fast)
+# Loading work.INST_MEM(fast)
+# Loading work.riscv_alu_assertions(fast)
+# Loading work.riscv_decode_assertions(fast)
+# Loading work.riscv_rf_assertions(fast)
+# Loading work.riscv_pc_assertions(fast)
+# Loading work.PROCESSOR(fast)
+# Loading work.CONTROL(fast__1)
+# Loading work.DATAPATH(fast)
+# Loading uvm_1_2.questa_uvm_pkg(fast)
+# Loading C:/questasim64_10.7c/uvm-1.2/win64/uvm_dpi.dll
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(216) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test riscv_invalid_decode_test...
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 55000: uvm_test_top.env.ref_model [PREDICT] PC=00000000 UNKNOWN x0(00000000), x0(00000000) -> x0=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 55000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x00000000 [UNKNOWN] rd=x0 rs1=x0 rs2=x0
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 55000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x0 data=0x00000000 zero=1 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 55000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000000 UNKNOWN x0=00000000 zero=1
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 65000: uvm_test_top.env.ref_model [PREDICT] PC=00000004 ADD x0(00000000), x1(5a5a0001) -> x11=5a5a0001
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 65000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001005b3 [ADD] rd=x11 rs1=x0 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 65000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x11 data=0x5a5a0001 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 65000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000004 ADD x11=5a5a0001 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 75000: uvm_test_top.env.ref_model [PREDICT] PC=00000008 UNKNOWN x31(5a5a001f), x31(5a5a001f) -> x31=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 75000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0xffffffff [UNKNOWN] rd=x31 rs1=x31 rs2=x31
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 75000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x31 data=0x5a5a001f zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 75000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000008 UNKNOWN x31=5a5a001f zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 85000: uvm_test_top.env.ref_model [PREDICT] PC=0000000c ADD x31(5a5a001f), x1(5a5a0001) -> x13=b4b40020
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 85000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001f86b3 [ADD] rd=x13 rs1=x31 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 85000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x13 data=0xb4b40020 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 85000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000000c ADD x13=b4b40020 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 95000: uvm_test_top.env.ref_model [PREDICT] PC=00000010 UNKNOWN x2(5a5a0002), x1(5a5a0001) -> x30=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 95000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0xfe110f33 [UNKNOWN] rd=x30 rs1=x2 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 95000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x30 data=0x5a5a0000 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 95000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000010 UNKNOWN x30=5a5a0000 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 105000: uvm_test_top.env.ref_model [PREDICT] PC=00000014 ADD x30(5a5a001e), x1(5a5a0001) -> x15=b4b4001f
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 105000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001f07b3 [ADD] rd=x15 rs1=x30 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 105000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x15 data=0xb4b4001f zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 105000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000014 ADD x15=b4b4001f zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 115000: uvm_test_top.env.ref_model [PREDICT] PC=00000018 UNKNOWN x4(5a5a0004), x3(5a5a0003) -> x17=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 115000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x003238b3 [UNKNOWN] rd=x17 rs1=x4 rs2=x3
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 115000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x17 data=0x5a5a0000 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 115000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000018 UNKNOWN x17=5a5a0000 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 125000: uvm_test_top.env.ref_model [PREDICT] PC=0000001c ADD x17(5a5a0011), x1(5a5a0001) -> x17=b4b40012
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 125000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001888b3 [ADD] rd=x17 rs1=x17 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 125000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x17 data=0xb4b40012 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 125000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000001c ADD x17=b4b40012 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/seq/riscv_base_seq.sv(22) @ 130000: uvm_test_top.env.in_agent.sequencer@@invalid_decode_seq [invalid_decode_seq] BASE_SEQ: One program run complete
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 195000: uvm_test_top.env.ref_model [PREDICT] PC=00000000 ADD x31(5a5a001f), x1(5a5a0001) -> x10=b4b40020
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 195000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001f8533 [ADD] rd=x10 rs1=x31 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 195000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x10 data=0xb4b40020 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 195000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000000 ADD x10=b4b40020 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 205000: uvm_test_top.env.ref_model [PREDICT] PC=00000004 UNKNOWN x0(00000000), x0(00000000) -> x0=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 205000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x00000000 [UNKNOWN] rd=x0 rs1=x0 rs2=x0
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 205000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x0 data=0x00000000 zero=1 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 205000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000004 UNKNOWN x0=00000000 zero=1
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 215000: uvm_test_top.env.ref_model [PREDICT] PC=00000008 ADD x0(00000000), x1(5a5a0001) -> x12=5a5a0001
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 215000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x00100633 [ADD] rd=x12 rs1=x0 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 215000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x12 data=0x5a5a0001 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 215000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000008 ADD x12=5a5a0001 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 225000: uvm_test_top.env.ref_model [PREDICT] PC=0000000c UNKNOWN x31(5a5a001f), x31(5a5a001f) -> x31=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 225000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0xffffffff [UNKNOWN] rd=x31 rs1=x31 rs2=x31
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 225000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x31 data=0x5a5a001f zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 225000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000000c UNKNOWN x31=5a5a001f zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 235000: uvm_test_top.env.ref_model [PREDICT] PC=00000010 ADD x31(5a5a001f), x1(5a5a0001) -> x14=b4b40020
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 235000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001f8733 [ADD] rd=x14 rs1=x31 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 235000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x14 data=0xb4b40020 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 235000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000010 ADD x14=b4b40020 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 245000: uvm_test_top.env.ref_model [PREDICT] PC=00000014 UNKNOWN x2(5a5a0002), x1(5a5a0001) -> x30=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 245000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0xfe110f33 [UNKNOWN] rd=x30 rs1=x2 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 245000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x30 data=0x5a5a0000 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 245000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000014 UNKNOWN x30=5a5a0000 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 255000: uvm_test_top.env.ref_model [PREDICT] PC=00000018 ADD x30(5a5a001e), x1(5a5a0001) -> x16=b4b4001f
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 255000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001f0833 [ADD] rd=x16 rs1=x30 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 255000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x16 data=0xb4b4001f zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 255000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000018 ADD x16=b4b4001f zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 265000: uvm_test_top.env.ref_model [PREDICT] PC=0000001c UNKNOWN x4(5a5a0004), x3(5a5a0003) -> x17=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 265000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x003238b3 [UNKNOWN] rd=x17 rs1=x4 rs2=x3
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 265000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x17 data=0x5a5a0000 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 265000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000001c UNKNOWN x17=5a5a0000 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/seq/riscv_base_seq.sv(22) @ 270000: uvm_test_top.env.in_agent.sequencer@@invalid_decode_seq [invalid_decode_seq] BASE_SEQ: One program run complete
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 335000: uvm_test_top.env.ref_model [PREDICT] PC=00000000 UNKNOWN x31(5a5a001f), x31(5a5a001f) -> x31=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 335000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0xffffffff [UNKNOWN] rd=x31 rs1=x31 rs2=x31
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 335000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x31 data=0x5a5a001f zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 335000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000000 UNKNOWN x31=5a5a001f zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 345000: uvm_test_top.env.ref_model [PREDICT] PC=00000004 ADD x31(5a5a001f), x1(5a5a0001) -> x11=b4b40020
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 345000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001f85b3 [ADD] rd=x11 rs1=x31 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 345000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x11 data=0xb4b40020 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 345000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000004 ADD x11=b4b40020 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 355000: uvm_test_top.env.ref_model [PREDICT] PC=00000008 UNKNOWN x2(5a5a0002), x1(5a5a0001) -> x30=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 355000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0xfe110f33 [UNKNOWN] rd=x30 rs1=x2 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 355000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x30 data=0x5a5a0000 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 355000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000008 UNKNOWN x30=5a5a0000 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 365000: uvm_test_top.env.ref_model [PREDICT] PC=0000000c ADD x30(5a5a001e), x1(5a5a0001) -> x13=b4b4001f
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 365000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001f06b3 [ADD] rd=x13 rs1=x30 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 365000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x13 data=0xb4b4001f zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 365000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000000c ADD x13=b4b4001f zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 375000: uvm_test_top.env.ref_model [PREDICT] PC=00000010 UNKNOWN x4(5a5a0004), x3(5a5a0003) -> x17=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 375000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x003238b3 [UNKNOWN] rd=x17 rs1=x4 rs2=x3
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 375000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x17 data=0x5a5a0000 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 375000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000010 UNKNOWN x17=5a5a0000 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 385000: uvm_test_top.env.ref_model [PREDICT] PC=00000014 ADD x17(5a5a0011), x1(5a5a0001) -> x15=b4b40012
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 385000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001887b3 [ADD] rd=x15 rs1=x17 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 385000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x15 data=0xb4b40012 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 385000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000014 ADD x15=b4b40012 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 395000: uvm_test_top.env.ref_model [PREDICT] PC=00000018 UNKNOWN x6(5a5a0006), x5(5a5a0005) -> x9=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 395000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x005304cc [UNKNOWN] rd=x9 rs1=x6 rs2=x5
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 395000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x9 data=0x5a5a0004 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 395000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000018 UNKNOWN x9=5a5a0004 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 405000: uvm_test_top.env.ref_model [PREDICT] PC=0000001c ADD x9(5a5a0009), x1(5a5a0001) -> x17=b4b4000a
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 405000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001488b3 [ADD] rd=x17 rs1=x9 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 405000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x17 data=0xb4b4000a zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 405000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000001c ADD x17=b4b4000a zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/seq/riscv_base_seq.sv(22) @ 410000: uvm_test_top.env.in_agent.sequencer@@invalid_decode_seq [invalid_decode_seq] BASE_SEQ: One program run complete
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 475000: uvm_test_top.env.ref_model [PREDICT] PC=00000000 ADD x31(5a5a001f), x1(5a5a0001) -> x10=b4b40020
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 475000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001f8533 [ADD] rd=x10 rs1=x31 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 475000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x10 data=0xb4b40020 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 475000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000000 ADD x10=b4b40020 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 485000: uvm_test_top.env.ref_model [PREDICT] PC=00000004 UNKNOWN x31(5a5a001f), x31(5a5a001f) -> x31=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 485000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0xffffffff [UNKNOWN] rd=x31 rs1=x31 rs2=x31
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 485000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x31 data=0x5a5a001f zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 485000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000004 UNKNOWN x31=5a5a001f zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 495000: uvm_test_top.env.ref_model [PREDICT] PC=00000008 ADD x31(5a5a001f), x1(5a5a0001) -> x12=b4b40020
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 495000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001f8633 [ADD] rd=x12 rs1=x31 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 495000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x12 data=0xb4b40020 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 495000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000008 ADD x12=b4b40020 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 505000: uvm_test_top.env.ref_model [PREDICT] PC=0000000c UNKNOWN x2(5a5a0002), x1(5a5a0001) -> x30=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 505000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0xfe110f33 [UNKNOWN] rd=x30 rs1=x2 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 505000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x30 data=0x5a5a0000 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 505000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000000c UNKNOWN x30=5a5a0000 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 515000: uvm_test_top.env.ref_model [PREDICT] PC=00000010 ADD x30(5a5a001e), x1(5a5a0001) -> x14=b4b4001f
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 515000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001f0733 [ADD] rd=x14 rs1=x30 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 515000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x14 data=0xb4b4001f zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 515000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000010 ADD x14=b4b4001f zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 525000: uvm_test_top.env.ref_model [PREDICT] PC=00000014 UNKNOWN x4(5a5a0004), x3(5a5a0003) -> x17=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 525000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x003238b3 [UNKNOWN] rd=x17 rs1=x4 rs2=x3
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 525000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x17 data=0x5a5a0000 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 525000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000014 UNKNOWN x17=5a5a0000 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 535000: uvm_test_top.env.ref_model [PREDICT] PC=00000018 ADD x17(5a5a0011), x1(5a5a0001) -> x16=b4b40012
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 535000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x00188833 [ADD] rd=x16 rs1=x17 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 535000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x16 data=0xb4b40012 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 535000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000018 ADD x16=b4b40012 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 545000: uvm_test_top.env.ref_model [PREDICT] PC=0000001c UNKNOWN x6(5a5a0006), x5(5a5a0005) -> x9=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 545000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x005304cc [UNKNOWN] rd=x9 rs1=x6 rs2=x5
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 545000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x9 data=0x5a5a0004 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 545000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000001c UNKNOWN x9=5a5a0004 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/seq/riscv_base_seq.sv(22) @ 550000: uvm_test_top.env.in_agent.sequencer@@invalid_decode_seq [invalid_decode_seq] BASE_SEQ: One program run complete
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 615000: uvm_test_top.env.ref_model [PREDICT] PC=00000000 UNKNOWN x2(5a5a0002), x1(5a5a0001) -> x30=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 615000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0xfe110f33 [UNKNOWN] rd=x30 rs1=x2 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 615000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x30 data=0x5a5a0000 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 615000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000000 UNKNOWN x30=5a5a0000 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 625000: uvm_test_top.env.ref_model [PREDICT] PC=00000004 ADD x30(5a5a001e), x1(5a5a0001) -> x11=b4b4001f
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 625000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001f05b3 [ADD] rd=x11 rs1=x30 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 625000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x11 data=0xb4b4001f zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 625000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000004 ADD x11=b4b4001f zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 635000: uvm_test_top.env.ref_model [PREDICT] PC=00000008 UNKNOWN x4(5a5a0004), x3(5a5a0003) -> x17=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 635000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x003238b3 [UNKNOWN] rd=x17 rs1=x4 rs2=x3
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 635000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x17 data=0x5a5a0000 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 635000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000008 UNKNOWN x17=5a5a0000 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 645000: uvm_test_top.env.ref_model [PREDICT] PC=0000000c ADD x17(5a5a0011), x1(5a5a0001) -> x13=b4b40012
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 645000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001886b3 [ADD] rd=x13 rs1=x17 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 645000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x13 data=0xb4b40012 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 645000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000000c ADD x13=b4b40012 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 655000: uvm_test_top.env.ref_model [PREDICT] PC=00000010 UNKNOWN x6(5a5a0006), x5(5a5a0005) -> x9=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 655000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x005304cc [UNKNOWN] rd=x9 rs1=x6 rs2=x5
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 655000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x9 data=0x5a5a0004 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 655000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000010 UNKNOWN x9=5a5a0004 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 665000: uvm_test_top.env.ref_model [PREDICT] PC=00000014 ADD x9(5a5a0009), x1(5a5a0001) -> x15=b4b4000a
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 665000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001487b3 [ADD] rd=x15 rs1=x9 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 665000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x15 data=0xb4b4000a zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 665000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000014 ADD x15=b4b4000a zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 675000: uvm_test_top.env.ref_model [PREDICT] PC=00000018 UNKNOWN x0(00000000), x0(00000000) -> x0=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 675000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x00000000 [UNKNOWN] rd=x0 rs1=x0 rs2=x0
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 675000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x0 data=0x00000000 zero=1 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 675000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000018 UNKNOWN x0=00000000 zero=1
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 685000: uvm_test_top.env.ref_model [PREDICT] PC=0000001c ADD x0(00000000), x1(5a5a0001) -> x17=5a5a0001
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 685000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001008b3 [ADD] rd=x17 rs1=x0 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 685000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x17 data=0x5a5a0001 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 685000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000001c ADD x17=5a5a0001 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/seq/riscv_base_seq.sv(22) @ 690000: uvm_test_top.env.in_agent.sequencer@@invalid_decode_seq [invalid_decode_seq] BASE_SEQ: One program run complete
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 755000: uvm_test_top.env.ref_model [PREDICT] PC=00000000 ADD x31(5a5a001f), x1(5a5a0001) -> x10=b4b40020
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 755000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001f8533 [ADD] rd=x10 rs1=x31 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 755000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x10 data=0xb4b40020 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 755000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000000 ADD x10=b4b40020 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 765000: uvm_test_top.env.ref_model [PREDICT] PC=00000004 UNKNOWN x2(5a5a0002), x1(5a5a0001) -> x30=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 765000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0xfe110f33 [UNKNOWN] rd=x30 rs1=x2 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 765000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x30 data=0x5a5a0000 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 765000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000004 UNKNOWN x30=5a5a0000 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 775000: uvm_test_top.env.ref_model [PREDICT] PC=00000008 ADD x30(5a5a001e), x1(5a5a0001) -> x12=b4b4001f
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 775000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001f0633 [ADD] rd=x12 rs1=x30 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 775000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x12 data=0xb4b4001f zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 775000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000008 ADD x12=b4b4001f zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 785000: uvm_test_top.env.ref_model [PREDICT] PC=0000000c UNKNOWN x4(5a5a0004), x3(5a5a0003) -> x17=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 785000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x003238b3 [UNKNOWN] rd=x17 rs1=x4 rs2=x3
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 785000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x17 data=0x5a5a0000 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 785000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000000c UNKNOWN x17=5a5a0000 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 795000: uvm_test_top.env.ref_model [PREDICT] PC=00000010 ADD x17(5a5a0011), x1(5a5a0001) -> x14=b4b40012
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 795000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x00188733 [ADD] rd=x14 rs1=x17 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 795000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x14 data=0xb4b40012 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 795000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000010 ADD x14=b4b40012 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 805000: uvm_test_top.env.ref_model [PREDICT] PC=00000014 UNKNOWN x6(5a5a0006), x5(5a5a0005) -> x9=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 805000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x005304cc [UNKNOWN] rd=x9 rs1=x6 rs2=x5
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 805000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x9 data=0x5a5a0004 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 805000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000014 UNKNOWN x9=5a5a0004 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 815000: uvm_test_top.env.ref_model [PREDICT] PC=00000018 ADD x9(5a5a0009), x1(5a5a0001) -> x16=b4b4000a
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 815000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x00148833 [ADD] rd=x16 rs1=x9 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 815000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x16 data=0xb4b4000a zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 815000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000018 ADD x16=b4b4000a zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 825000: uvm_test_top.env.ref_model [PREDICT] PC=0000001c UNKNOWN x0(00000000), x0(00000000) -> x0=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 825000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x00000000 [UNKNOWN] rd=x0 rs1=x0 rs2=x0
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 825000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x0 data=0x00000000 zero=1 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 825000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000001c UNKNOWN x0=00000000 zero=1
+# UVM_INFO C:/Document/RISC-V Verification/tb/seq/riscv_base_seq.sv(22) @ 830000: uvm_test_top.env.in_agent.sequencer@@invalid_decode_seq [invalid_decode_seq] BASE_SEQ: One program run complete
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 895000: uvm_test_top.env.ref_model [PREDICT] PC=00000000 UNKNOWN x4(5a5a0004), x3(5a5a0003) -> x17=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 895000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x003238b3 [UNKNOWN] rd=x17 rs1=x4 rs2=x3
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 895000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x17 data=0x5a5a0000 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 895000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000000 UNKNOWN x17=5a5a0000 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 905000: uvm_test_top.env.ref_model [PREDICT] PC=00000004 ADD x17(5a5a0011), x1(5a5a0001) -> x11=b4b40012
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 905000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001885b3 [ADD] rd=x11 rs1=x17 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 905000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x11 data=0xb4b40012 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 905000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000004 ADD x11=b4b40012 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 915000: uvm_test_top.env.ref_model [PREDICT] PC=00000008 UNKNOWN x6(5a5a0006), x5(5a5a0005) -> x9=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 915000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x005304cc [UNKNOWN] rd=x9 rs1=x6 rs2=x5
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 915000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x9 data=0x5a5a0004 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 915000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000008 UNKNOWN x9=5a5a0004 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 925000: uvm_test_top.env.ref_model [PREDICT] PC=0000000c ADD x9(5a5a0009), x1(5a5a0001) -> x13=b4b4000a
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 925000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001486b3 [ADD] rd=x13 rs1=x9 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 925000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x13 data=0xb4b4000a zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 925000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000000c ADD x13=b4b4000a zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 935000: uvm_test_top.env.ref_model [PREDICT] PC=00000010 UNKNOWN x0(00000000), x0(00000000) -> x0=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 935000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x00000000 [UNKNOWN] rd=x0 rs1=x0 rs2=x0
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 935000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x0 data=0x00000000 zero=1 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 935000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000010 UNKNOWN x0=00000000 zero=1
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 945000: uvm_test_top.env.ref_model [PREDICT] PC=00000014 ADD x0(00000000), x1(5a5a0001) -> x15=5a5a0001
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 945000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001007b3 [ADD] rd=x15 rs1=x0 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 945000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x15 data=0x5a5a0001 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 945000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000014 ADD x15=5a5a0001 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 955000: uvm_test_top.env.ref_model [PREDICT] PC=00000018 UNKNOWN x31(5a5a001f), x31(5a5a001f) -> x31=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 955000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0xffffffff [UNKNOWN] rd=x31 rs1=x31 rs2=x31
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 955000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x31 data=0x5a5a001f zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 955000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000018 UNKNOWN x31=5a5a001f zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 965000: uvm_test_top.env.ref_model [PREDICT] PC=0000001c ADD x31(5a5a001f), x1(5a5a0001) -> x17=b4b40020
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 965000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001f88b3 [ADD] rd=x17 rs1=x31 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 965000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x17 data=0xb4b40020 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 965000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000001c ADD x17=b4b40020 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/seq/riscv_base_seq.sv(22) @ 970000: uvm_test_top.env.in_agent.sequencer@@invalid_decode_seq [invalid_decode_seq] BASE_SEQ: One program run complete
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1035000: uvm_test_top.env.ref_model [PREDICT] PC=00000000 ADD x31(5a5a001f), x1(5a5a0001) -> x10=b4b40020
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1035000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001f8533 [ADD] rd=x10 rs1=x31 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1035000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x10 data=0xb4b40020 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1035000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000000 ADD x10=b4b40020 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1045000: uvm_test_top.env.ref_model [PREDICT] PC=00000004 UNKNOWN x4(5a5a0004), x3(5a5a0003) -> x17=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1045000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x003238b3 [UNKNOWN] rd=x17 rs1=x4 rs2=x3
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1045000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x17 data=0x5a5a0000 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1045000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000004 UNKNOWN x17=5a5a0000 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1055000: uvm_test_top.env.ref_model [PREDICT] PC=00000008 ADD x17(5a5a0011), x1(5a5a0001) -> x12=b4b40012
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1055000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x00188633 [ADD] rd=x12 rs1=x17 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1055000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x12 data=0xb4b40012 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1055000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000008 ADD x12=b4b40012 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1065000: uvm_test_top.env.ref_model [PREDICT] PC=0000000c UNKNOWN x6(5a5a0006), x5(5a5a0005) -> x9=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1065000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x005304cc [UNKNOWN] rd=x9 rs1=x6 rs2=x5
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1065000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x9 data=0x5a5a0004 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1065000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000000c UNKNOWN x9=5a5a0004 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1075000: uvm_test_top.env.ref_model [PREDICT] PC=00000010 ADD x9(5a5a0009), x1(5a5a0001) -> x14=b4b4000a
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1075000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x00148733 [ADD] rd=x14 rs1=x9 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1075000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x14 data=0xb4b4000a zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1075000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000010 ADD x14=b4b4000a zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1085000: uvm_test_top.env.ref_model [PREDICT] PC=00000014 UNKNOWN x0(00000000), x0(00000000) -> x0=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1085000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x00000000 [UNKNOWN] rd=x0 rs1=x0 rs2=x0
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1085000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x0 data=0x00000000 zero=1 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1085000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000014 UNKNOWN x0=00000000 zero=1
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1095000: uvm_test_top.env.ref_model [PREDICT] PC=00000018 ADD x0(00000000), x1(5a5a0001) -> x16=5a5a0001
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1095000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x00100833 [ADD] rd=x16 rs1=x0 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1095000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x16 data=0x5a5a0001 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1095000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000018 ADD x16=5a5a0001 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1105000: uvm_test_top.env.ref_model [PREDICT] PC=0000001c UNKNOWN x31(5a5a001f), x31(5a5a001f) -> x31=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1105000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0xffffffff [UNKNOWN] rd=x31 rs1=x31 rs2=x31
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1105000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x31 data=0x5a5a001f zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1105000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000001c UNKNOWN x31=5a5a001f zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/seq/riscv_base_seq.sv(22) @ 1110000: uvm_test_top.env.in_agent.sequencer@@invalid_decode_seq [invalid_decode_seq] BASE_SEQ: One program run complete
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1175000: uvm_test_top.env.ref_model [PREDICT] PC=00000000 UNKNOWN x6(5a5a0006), x5(5a5a0005) -> x9=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1175000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x005304cc [UNKNOWN] rd=x9 rs1=x6 rs2=x5
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1175000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x9 data=0x5a5a0004 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1175000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000000 UNKNOWN x9=5a5a0004 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1185000: uvm_test_top.env.ref_model [PREDICT] PC=00000004 ADD x9(5a5a0009), x1(5a5a0001) -> x11=b4b4000a
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1185000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001485b3 [ADD] rd=x11 rs1=x9 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1185000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x11 data=0xb4b4000a zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1185000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000004 ADD x11=b4b4000a zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1195000: uvm_test_top.env.ref_model [PREDICT] PC=00000008 UNKNOWN x0(00000000), x0(00000000) -> x0=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1195000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x00000000 [UNKNOWN] rd=x0 rs1=x0 rs2=x0
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1195000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x0 data=0x00000000 zero=1 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1195000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000008 UNKNOWN x0=00000000 zero=1
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1205000: uvm_test_top.env.ref_model [PREDICT] PC=0000000c ADD x0(00000000), x1(5a5a0001) -> x13=5a5a0001
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1205000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001006b3 [ADD] rd=x13 rs1=x0 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1205000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x13 data=0x5a5a0001 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1205000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000000c ADD x13=5a5a0001 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1215000: uvm_test_top.env.ref_model [PREDICT] PC=00000010 UNKNOWN x31(5a5a001f), x31(5a5a001f) -> x31=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1215000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0xffffffff [UNKNOWN] rd=x31 rs1=x31 rs2=x31
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1215000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x31 data=0x5a5a001f zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1215000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000010 UNKNOWN x31=5a5a001f zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1225000: uvm_test_top.env.ref_model [PREDICT] PC=00000014 ADD x31(5a5a001f), x1(5a5a0001) -> x15=b4b40020
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1225000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001f87b3 [ADD] rd=x15 rs1=x31 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1225000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x15 data=0xb4b40020 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1225000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000014 ADD x15=b4b40020 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1235000: uvm_test_top.env.ref_model [PREDICT] PC=00000018 UNKNOWN x2(5a5a0002), x1(5a5a0001) -> x30=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1235000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0xfe110f33 [UNKNOWN] rd=x30 rs1=x2 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1235000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x30 data=0x5a5a0000 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1235000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000018 UNKNOWN x30=5a5a0000 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1245000: uvm_test_top.env.ref_model [PREDICT] PC=0000001c ADD x30(5a5a001e), x1(5a5a0001) -> x17=b4b4001f
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1245000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001f08b3 [ADD] rd=x17 rs1=x30 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1245000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x17 data=0xb4b4001f zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1245000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000001c ADD x17=b4b4001f zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/seq/riscv_base_seq.sv(22) @ 1250000: uvm_test_top.env.in_agent.sequencer@@invalid_decode_seq [invalid_decode_seq] BASE_SEQ: One program run complete
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1315000: uvm_test_top.env.ref_model [PREDICT] PC=00000000 ADD x31(5a5a001f), x1(5a5a0001) -> x10=b4b40020
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1315000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001f8533 [ADD] rd=x10 rs1=x31 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1315000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x10 data=0xb4b40020 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1315000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000000 ADD x10=b4b40020 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1325000: uvm_test_top.env.ref_model [PREDICT] PC=00000004 UNKNOWN x6(5a5a0006), x5(5a5a0005) -> x9=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1325000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x005304cc [UNKNOWN] rd=x9 rs1=x6 rs2=x5
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1325000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x9 data=0x5a5a0004 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1325000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000004 UNKNOWN x9=5a5a0004 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1335000: uvm_test_top.env.ref_model [PREDICT] PC=00000008 ADD x9(5a5a0009), x1(5a5a0001) -> x12=b4b4000a
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1335000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x00148633 [ADD] rd=x12 rs1=x9 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1335000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x12 data=0xb4b4000a zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1335000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000008 ADD x12=b4b4000a zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1345000: uvm_test_top.env.ref_model [PREDICT] PC=0000000c UNKNOWN x0(00000000), x0(00000000) -> x0=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1345000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x00000000 [UNKNOWN] rd=x0 rs1=x0 rs2=x0
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1345000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x0 data=0x00000000 zero=1 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1345000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000000c UNKNOWN x0=00000000 zero=1
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1355000: uvm_test_top.env.ref_model [PREDICT] PC=00000010 ADD x0(00000000), x1(5a5a0001) -> x14=5a5a0001
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1355000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x00100733 [ADD] rd=x14 rs1=x0 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1355000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x14 data=0x5a5a0001 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1355000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000010 ADD x14=5a5a0001 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1365000: uvm_test_top.env.ref_model [PREDICT] PC=00000014 UNKNOWN x31(5a5a001f), x31(5a5a001f) -> x31=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1365000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0xffffffff [UNKNOWN] rd=x31 rs1=x31 rs2=x31
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1365000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x31 data=0x5a5a001f zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1365000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000014 UNKNOWN x31=5a5a001f zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1375000: uvm_test_top.env.ref_model [PREDICT] PC=00000018 ADD x31(5a5a001f), x1(5a5a0001) -> x16=b4b40020
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1375000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0x001f8833 [ADD] rd=x16 rs1=x31 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1375000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [ADD] rd=x16 data=0xb4b40020 zero=0 alu_control=0010
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1375000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=00000018 ADD x16=b4b40020 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/model/riscv_ref_model.sv(77) @ 1385000: uvm_test_top.env.ref_model [PREDICT] PC=0000001c UNKNOWN x2(5a5a0002), x1(5a5a0001) -> x30=00000000
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_in_monitor.sv(39) @ 1385000: uvm_test_top.env.in_agent.in_monitor [in_monitor] IN_MON: Captured instr=0xfe110f33 [UNKNOWN] rd=x30 rs1=x2 rs2=x1
+# UVM_INFO C:/Document/RISC-V Verification/tb/agent/riscv_out_monitor.sv(51) @ 1385000: uvm_test_top.env.out_agent.out_monitor [out_monitor] OUT_MON: [UNKNOWN] rd=x30 data=0x5a5a0000 zero=0 alu_control=0000
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(68) @ 1385000: uvm_test_top.env.scoreboard [WRITEBACK] PASS PC=0000001c UNKNOWN x30=5a5a0000 zero=0
+# UVM_INFO C:/Document/RISC-V Verification/tb/seq/riscv_base_seq.sv(22) @ 1390000: uvm_test_top.env.in_agent.sequencer@@invalid_decode_seq [invalid_decode_seq] BASE_SEQ: One program run complete
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_objection.svh(1270) @ 1390000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO C:/Document/RISC-V Verification/tb/test/riscv_matrix_test.sv(45) @ 1390000: uvm_test_top [REJECT_COUNT] Verified 40 rejected instructions out of 80
+# UVM_INFO C:/Document/RISC-V Verification/tb/cov/riscv_coverage.sv(79) @ 1390000: uvm_test_top.env.coverage [COVERAGE] instruction=11.1% rd=25.0% rs1=15.6% rs2=3.1% zero=50.0% op_x_rd=2.8% op_x_zero=5.6%
+# UVM_INFO C:/Document/RISC-V Verification/tb/scb/riscv_scoreboard.sv(82) @ 1390000: uvm_test_top.env.scoreboard [SCOREBOARD] Planned=80 Compared=80 PASS=80 FAIL=0
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_report_server.svh(847) @ 1390000: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  338
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [COVERAGE]     1
+# [PREDICT]    80
+# [Questa UVM]     2
+# [REJECT_COUNT]     1
+# [RNTST]     1
+# [SCOREBOARD]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [WRITEBACK]    80
+# [in_monitor]    80
+# [invalid_decode_seq]    10
+# [out_monitor]    80
+# 
+# ** Note: $finish    : C:/Document/RISC-V Verification/tb_top.sv(125)
+#    Time: 1390 ns  Iteration: 76  Instance: /tb_top
+# Break in Module tb_top at C:/Document/RISC-V Verification/tb_top.sv line 125
+# Stopped at C:/Document/RISC-V Verification/tb_top.sv line 125

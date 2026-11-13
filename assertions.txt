@@ -1,0 +1,432 @@
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/tb_top/reset_image[31]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[31]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[30]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[30]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[29]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[29]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[28]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[28]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[27]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[27]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[26]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[26]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[25]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[25]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[24]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[24]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[23]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[23]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[22]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[22]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[21]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[21]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[20]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[20]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[19]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[19]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[18]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[18]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[17]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[17]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[16]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[16]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[15]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[15]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[14]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[14]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[13]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[13]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[12]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[12]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[11]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[11]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[10]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[10]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[9]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[9]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[8]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[8]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[7]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[7]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[6]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[6]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[5]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[5]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[4]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[4]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[3]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[3]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[2]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[2]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[1]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[1]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/reset_image[0]/ap_init
+                     C:/Document/RISC-V Verification/tb_top.sv(82)
+                                                        0          1
+/tb_top/reset_image[0]/ap_release
+                     C:/Document/RISC-V Verification/tb_top.sv(85)
+                                                        0          1
+/tb_top/ap_zero_toggle
+                     C:/Document/RISC-V Verification/tb_top.sv(91)
+                                                        0          1
+/tb_top/unit_fixture/alu_checks/ap_zero_flag
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(18)
+                                                        0         14
+/tb_top/unit_fixture/ctrl_checks/ap_decode
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(45)
+                                                        0          5
+/tb_top/unit_fixture/rf_checks/write_disabled[31]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[30]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[29]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[28]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[27]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[26]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[25]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[24]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[23]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[22]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[21]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[20]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[19]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[18]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[17]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[16]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[15]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[14]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[13]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[12]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[11]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[10]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[9]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[8]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[7]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[6]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[5]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[4]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[3]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[2]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[1]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/write_disabled[0]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          8
+/tb_top/unit_fixture/rf_checks/ap_commit
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(62)
+                                                        0          3
+/tb_top/unit_fixture/rf_checks/ap_x0
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(76)
+                                                        0          8
+/tb_top/unit_fixture/pc_checks/ap_reset_pc
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(3)
+                                                        0          6
+/tb_top/unit_fixture/pc_checks/ap_pc_step
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(11)
+                                                        0          6
+/tb_top/pc_checks/ap_reset_pc
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(3)
+                                                        0         22
+/tb_top/pc_checks/ap_pc_step
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(11)
+                                                        0         22
+/tb_top/alu_checks/ap_zero_flag
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(18)
+                                                        0         22
+/tb_top/ctrl_checks/ap_decode
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(45)
+                                                        0         22
+/tb_top/rf_checks/write_disabled[31]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[30]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[29]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[28]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[27]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[26]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[25]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[24]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[23]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[22]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[21]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[20]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[19]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[18]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[17]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[16]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[15]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[14]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[13]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[12]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[11]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[10]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[9]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[8]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[7]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[6]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[5]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[4]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[3]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[2]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[1]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/write_disabled[0]/ap_stable
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(72)
+                                                        0          1
+/tb_top/rf_checks/ap_commit
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(62)
+                                                        0         22
+/tb_top/rf_checks/ap_x0
+                     C:/Document/RISC-V Verification/tb/sva/riscv_assertions.sv(76)
+                                                        0         22
+/uvm_pkg/uvm_component_name_check_visitor/visit/immed__262
+                     C:/questasim64_10.7c/win64/../verilog_src/uvm-1.2/src/base/uvm_traversal.svh(262)
+                                                        0         55

@@ -1,0 +1,23 @@
+Coverage Report Totals BY FILES: Number of Files 5
+
+    Enabled Coverage            Active      Hits    Misses    Weight % Covered
+    ----------------            ------      ----    ------    ------ ---------
+    Stmts                           69        69         0         1  100.0000
+    Branches                        25        25         0         1  100.0000
+    FEC Condition Terms              3         3         0         1  100.0000
+    FEC Expression Terms             1         1         0         1  100.0000
+    Toggle Bins                   3678      3464       214         1   94.1816
+
+Total coverage (Code Coverage Only, filtered view): 98.8363%
+
+Coverage Report Totals BY INSTANCES: Number of Instances 27
+
+    Enabled Coverage            Active      Hits    Misses    Weight % Covered
+    ----------------            ------      ----    ------    ------ ---------
+    Stmts                          138       137         1         1   99.2753
+    Branches                        50        49         1         1   98.0000
+    FEC Condition Terms              6         6         0         1  100.0000
+    FEC Expression Terms             2         2         0         1  100.0000
+    Toggle Bins                   6390      3927      2463         1   61.4553
+Total coverage (filtered view): 91.7461%
+

@@ -1,0 +1,176 @@
+Coverage Report by DU with details
+
+=================================================================================
+=== Design Unit: work.IFU
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Toggle Bins                    132        89        43   67.4242
+
+================================Toggle Details================================
+
+Toggle Coverage for Design Unit work.IFU
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                             PC[0]           0           0        0.00 
+                                             PC[1]           0           0        0.00 
+                                            PC[12]           0          10       50.00 
+                                            PC[13]           0           0        0.00 
+                                            PC[14]           0           0        0.00 
+                                            PC[15]           0           0        0.00 
+                                            PC[16]           0           0        0.00 
+                                            PC[17]           0           0        0.00 
+                                            PC[18]           0           0        0.00 
+                                            PC[19]           0           0        0.00 
+                                            PC[20]           0           0        0.00 
+                                            PC[21]           0           0        0.00 
+                                            PC[22]           0           0        0.00 
+                                            PC[23]           0           0        0.00 
+                                            PC[24]           0           0        0.00 
+                                            PC[25]           0           0        0.00 
+                                            PC[26]           0           0        0.00 
+                                            PC[27]           0           0        0.00 
+                                            PC[28]           0           0        0.00 
+                                            PC[29]           0           0        0.00 
+                                            PC[30]           0           0        0.00 
+                                            PC[31]           0           0        0.00 
+
+Total Node Count     =         66 
+Toggled Node Count   =         44 
+Untoggled Node Count =         22 
+
+Toggle Coverage      =    67.4242% (89 of 132 bins)
+
+=================================================================================
+=== Design Unit: work.INST_MEM
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Toggle Bins                    642       599        43   93.3021
+
+================================Toggle Details================================
+
+Toggle Coverage for Design Unit work.INST_MEM
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                             PC[0]           0           0        0.00 
+                                             PC[1]           0           0        0.00 
+                                            PC[12]           0          10       50.00 
+                                            PC[13]           0           0        0.00 
+                                            PC[14]           0           0        0.00 
+                                            PC[15]           0           0        0.00 
+                                            PC[16]           0           0        0.00 
+                                            PC[17]           0           0        0.00 
+                                            PC[18]           0           0        0.00 
+                                            PC[19]           0           0        0.00 
+                                            PC[20]           0           0        0.00 
+                                            PC[21]           0           0        0.00 
+                                            PC[22]           0           0        0.00 
+                                            PC[23]           0           0        0.00 
+                                            PC[24]           0           0        0.00 
+                                            PC[25]           0           0        0.00 
+                                            PC[26]           0           0        0.00 
+                                            PC[27]           0           0        0.00 
+                                            PC[28]           0           0        0.00 
+                                            PC[29]           0           0        0.00 
+                                            PC[30]           0           0        0.00 
+                                            PC[31]           0           0        0.00 
+
+Total Node Count     =        321 
+Toggled Node Count   =        299 
+Untoggled Node Count =         22 
+
+Toggle Coverage      =    93.3021% (599 of 642 bins)
+
+=================================================================================
+=== Design Unit: work.REG_FILE
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage            Active      Hits    Misses % Covered
+    ----------------            ------      ----    ------ ---------
+    Toggle Bins                   2340      2212       128   94.5299
+
+================================Toggle Details================================
+
+Toggle Coverage for Design Unit work.REG_FILE
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                              i[0]           0           0        0.00 
+                                              i[1]           0           0        0.00 
+                                              i[2]           0           0        0.00 
+                                              i[3]           0           0        0.00 
+                                              i[4]           0           0        0.00 
+                                              i[5]           0           0        0.00 
+                                              i[6]           0           0        0.00 
+                                              i[7]           0           0        0.00 
+                                              i[8]           0           0        0.00 
+                                              i[9]           0           0        0.00 
+                                             i[10]           0           0        0.00 
+                                             i[11]           0           0        0.00 
+                                             i[12]           0           0        0.00 
+                                             i[13]           0           0        0.00 
+                                             i[14]           0           0        0.00 
+                                             i[15]           0           0        0.00 
+                                             i[16]           0           0        0.00 
+                                             i[17]           0           0        0.00 
+                                             i[18]           0           0        0.00 
+                                             i[19]           0           0        0.00 
+                                             i[20]           0           0        0.00 
+                                             i[21]           0           0        0.00 
+                                             i[22]           0           0        0.00 
+                                             i[23]           0           0        0.00 
+                                             i[24]           0           0        0.00 
+                                             i[25]           0           0        0.00 
+                                             i[26]           0           0        0.00 
+                                             i[27]           0           0        0.00 
+                                             i[28]           0           0        0.00 
+                                             i[29]           0           0        0.00 
+                                             i[30]           0           0        0.00 
+                                             i[31]           0           0        0.00 
+                                  reg_memory[0][0]           0           0        0.00 
+                                  reg_memory[0][1]           0           0        0.00 
+                                  reg_memory[0][2]           0           0        0.00 
+                                  reg_memory[0][3]           0           0        0.00 
+                                  reg_memory[0][4]           0           0        0.00 
+                                  reg_memory[0][5]           0           0        0.00 
+                                  reg_memory[0][6]           0           0        0.00 
+                                  reg_memory[0][7]           0           0        0.00 
+                                  reg_memory[0][8]           0           0        0.00 
+                                  reg_memory[0][9]           0           0        0.00 
+                                 reg_memory[0][10]           0           0        0.00 
+                                 reg_memory[0][11]           0           0        0.00 
+                                 reg_memory[0][12]           0           0        0.00 
+                                 reg_memory[0][13]           0           0        0.00 
+                                 reg_memory[0][14]           0           0        0.00 
+                                 reg_memory[0][15]           0           0        0.00 
+                                 reg_memory[0][16]           0           0        0.00 
+                                 reg_memory[0][17]           0           0        0.00 
+                                 reg_memory[0][18]           0           0        0.00 
+                                 reg_memory[0][19]           0           0        0.00 
+                                 reg_memory[0][20]           0           0        0.00 
+                                 reg_memory[0][21]           0           0        0.00 
+                                 reg_memory[0][22]           0           0        0.00 
+                                 reg_memory[0][23]           0           0        0.00 
+                                 reg_memory[0][24]           0           0        0.00 
+                                 reg_memory[0][25]           0           0        0.00 
+                                 reg_memory[0][26]           0           0        0.00 
+                                 reg_memory[0][27]           0           0        0.00 
+                                 reg_memory[0][28]           0           0        0.00 
+                                 reg_memory[0][29]           0           0        0.00 
+                                 reg_memory[0][30]           0           0        0.00 
+                                 reg_memory[0][31]           0           0        0.00 
+
+Total Node Count     =       1170 
+Toggled Node Count   =       1106 
+Untoggled Node Count =         64 
+
+Toggle Coverage      =    94.5299% (2212 of 2340 bins)
+
+
+Total Coverage By Design Unit (filtered view): 93.1278%
+
